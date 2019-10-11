@@ -2,6 +2,8 @@
 *.tmp
 results/*
 
+Sandbox
+
 # Python
 *.py[co]
 __pycache__/
