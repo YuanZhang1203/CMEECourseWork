@@ -1,7 +1,6 @@
 *~
 *.tmp
 results/*
-[Ss]andbox/
 
 # Python
 *.py[co]
