@@ -1,0 +1,18 @@
+#clone data 
+git clone https://github.com/YuanZhang1203/TheMulQuaBio.git
+mv TheMulQuaBio/data/fasta/ CMEECourseWork/Week1/Data/
+
+# 1. Count how many lines are in each file 
+cd CMEECourseWork/Week1/Data/fasta && wc -l *
+
+# 2. Print everything starting from the second line for E.coli genome
+tail -n +2 CMEECourseWork/Week1/Data/fasta/E.coli.fasta
+
+# 3. Count the sequence length of this genome
+wc -m CMEECourseWork/Week1/Data/fasta/E.coli.fasta 
+
+# 4. Count the matches of a particular sequence, "ATGC" in the genome of E.coli
+grep -i ATGC CMEECourseWork/Week1/Data/fasta/E.coli.fasta |wc -l
+
+# 5. Compute the (A+T)/(G+C) ratio.
+cd CMEECourseWork/Week1/Data/fasta/ && A=`grep -o A E.coli.fasta |wc -l` && T=`grep -o T E.coli.fasta |wc -l` && G=`grep -o G E.coli.fasta |wc -l` && C=`grep -o C E.coli.fasta |wc -l` && echo "scale=2; ($A + $T)/($G + $C)" | bc
