@@ -1,6 +1,6 @@
 import csv
 import sys
-import ipdb
+
 #Define function
 def is_an_oak(name):
     """ Returns True if name is starts with 'quercus' """
@@ -11,7 +11,6 @@ def main(argv):
     g = open('../data/JustOaksData.csv','w')
     taxa = csv.reader(f)
     csvwrite = csv.writer(g)
-    oaks = set()
     for row in taxa:
         print(row)
         print ("The genus is: ") 
