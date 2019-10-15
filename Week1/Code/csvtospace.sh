@@ -1,5 +1,4 @@
 #/bin/bash
-cat /dev/null > $2
-cat $1 | tr -s "," "\t"  >>$2
+cat $1 | tr -s "," " "  >>$1.txt
 echo "Done!" 
 exit
