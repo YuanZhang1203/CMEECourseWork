@@ -50,3 +50,32 @@ This is a folder contains several test files.
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> f9f3daf0facfc5d0b17ec6029e6aa30fc2c72a47
