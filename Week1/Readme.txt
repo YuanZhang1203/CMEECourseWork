@@ -9,7 +9,7 @@ Note that there is a commented out exit command at the end of the script. Uncomm
    --CompileLaTeX.sh : a shell script to compile LATEX
    --ConcatenateTwoFiles.sh :a shell script to concatenate the contents of two files
    --CountLines.sh : a shell script count lines in a file
-   --csvtospace.sh : a shell script exercise that takes a comma separated values and converts it to a space separated values file. 
+   --csvtospace.sh : a shell script exercise that takes comma separated values and converts it to a space separated values file. 
    --FirstBiblio.bib : a text from a paper imported into BibTeX named “does the energy of a body einstein 1905”. 
    --FirstExample.tex : a text for a LATEX example. 
    --MyExampleScript.sh : an example of shell script to export the username, as well as presents the variables setting methods in shell scripting. 
