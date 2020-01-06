@@ -1,0 +1,1090 @@
+Starting weekly assessment for Yuan, Week7
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 5.70 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week1, Week7, Assessment, Week2, .git, Week3
+
+Found the following files in parent directory: README.txt, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+**********************************************************************
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+This is a folder about courseworks of CMEE.
+Author: Yuan Zhang
+Email： yz12119@ic.ac.uk
+
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: Week1, Week2, Week3, Week7
+
+The Week7 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK7...
+
+Found the following directories: Code, Data, results
+
+Found the following files: Readme.txt, .DS_Store
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: Readme.txt
+
+Printing contents of Readme.txt:
+**********************************************************************
+CMEECourseWork/Week7/
+This directory is a main folder including 3 directories (Code, Data, results) and one file (Readme.txt), which contains relevant courseworks in Week 7.
+
+
+CMEECourseWork/Week7/Code/ 
+This directory is one of benches of Week7, which covers codes of courseworks as well as exercises listed in the Jupyter Notebook.
+   --LV1.py: It is a file to plot the  numerical integration in Python for solving a classical model in biology — the Lotka-Volterra model for a predator-prey system in two-dimensional space (e.g., on land).
+   --profileme.py:  an illustrative program to show profiling is easy in ipython
+   --profileme2.py: converted the loop to a list comprehension, and replaced the .join with an explicit string concatenation.
+   --timeitme.py: It shows you can use the timeit module if you want to figure out what the best way to do something specific as part of a larger program (say a particular command or a loop) might be.
+   --LV2.py: It runs the Lotka-Volterra model with prey density dependence rR(1−RK)
+   --run_LV.py:testing LV1,2,3,4.py
+   --LV3.py: Write a discrete-time version of the LV model called LV3.py. 
+   --LV4.py: Write a version of the discrete-time model simulation with a random gaussian fluctuation in resource's growth rate at each time-step
+   --DrawFW.py: code for plotting a food web network in a program file
+   --regexs.py: show Regex functions in python 
+   --blackbirds.py: Blackbirds problem
+   --TestR.R: test for running R from Python easily
+   --TestR.py:to run R
+   --using_os.py: one of exercise
+   --fmr.R: used for testing,one of exercise
+   --run_fmr_R.py: test for running fmr.R
+
+CMEECourseWork/Week7/Data/  
+It is a folder containing data 
+   --blackbirds.txt
+   --NagyEtAl1999.csv
+   --QMEE_Net_Mat_edges.csv
+   --QMEE_Net_Mat_nodes.csv
+
+CMEECourseWork/Week7/results/
+This is a folder contains several results files.
+   --LV_model.pdf: Output of the LV1.py
+   --LV_model2.pdf:Output of the LV1.py
+   --LV2.pdf:Output of the LV2.py
+   --LV3.pdf:Output of the LV3.py
+   --LV4.pdf:Output of the LV4.py
+   --DrawFW.pdf:Output of the DrawFW.py, network
+   --fmr_plot.pdf: Output of the run_fmr_R.py
+   --fmr.Rout: Output of the run_fmr_R.py
+   --TestR_errFile.Rout: Output of the run_fmr_R.py
+
+
+
+
+**********************************************************************
+
+Found following files in results directory: fmr_plot.pdf, LV_model2.pdf, LV_model.pdf, fmr.Rout, LV4.pdf, DrawFW.pdf, LV2.pdf, TestR_errFile.Rout, LV3.pdf, .DS_Store...
+ideally, Results directory should be empty other than, perhaps, a readme. 
+
+Found 17 code files: TestR.py, regexs.py, LV3.py, profileme2.py, timeitme.py, blackbirds.py, TestR.R, profileme.py, LV4.py, fmr.R, using_os.py, LV1.py, DrawFW.py, blackbirds(1).py, run_fmr_R.py, run_LV.py, LV2.py
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file TestR.py...
+
+File contents are:
+**********************************************************************
+import subprocess
+subprocess.Popen("Rscript --verbose TestR.R > ../Results/TestR.Rout 2> ../Results/TestR_errFile.Rout", shell=True).wait()
+
+subprocess.Popen("Rscript --verbose NonExistScript.R > ../Results/outputFile.Rout 2> ../Results/errorFile.Rout", shell=True).wait()
+
+**********************************************************************
+
+Testing TestR.py...
+
+TestR.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 98
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+/bin/sh: 1: cannot create ../Results/TestR.Rout: Directory nonexistent
+/bin/sh: 1: cannot create ../Results/outputFile.Rout: Directory nonexistent
+
+======================================================================
+Inspecting script file regexs.py...
+
+File contents are:
+**********************************************************************
+import re                                                               
+
+my_string = "a given string"                                            
+
+match = re.search(r'\s', my_string)                                     
+
+print(match)                                                            
+
+match.group()                                                           
+
+match = re.search(r'\d', my_string)                                     
+
+print(match)
+
+MyStr = 'an example'
+match = re.search(r'\w*\s', MyStr) 
+if match:
+    print('found a match:', match.group())
+else:
+    print('did not find a match')
+
+match = re.search(r'2' , "it takes 2 to tango")
+match.group()
+
+match = re.search(r'\d' , "it takes 2 to tango")
+match.group()
+
+match = re.search(r'\d.*' , "it takes 2 to tango")
+match.group()
+
+match = re.search(r'\s\w{1,3}\s', 'once upon a time')
+match.group()
+
+match =re.search(r'\s\w*$', 'once upon a time')
+match.group()
+
+re.search(r'\w*\s\d.*\d', 'take 2 grams of H2O').group()
+
+re.search(r'^\w*.*?\s', 'once upon a time').group()
+
+re.search(r'^\w*.*?\s', 'once upon a time').group()
+
+re.search(r'<.+>', 'This is a <EM>first</EM> test').group()
+
+re.search(r'<.+?>', 'This is a <EM>first</EM> test').group()
+
+re.search(r'[AGTC]+', 'the sequence ATTCGT').group()
+
+re.search(r'\s+[A-Z]\w+\s*\w+', "The bird-shit frog's name is Theloderma asper.").group()**********************************************************************
+
+Testing regexs.py...
+
+regexs.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 96
+
+Output (only first 500 characters): 
+
+**********************************************************************
+<_sre.SRE_Match object; span=(1, 2), match=' '>
+None
+found a match: an 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.03571s
+
+======================================================================
+Inspecting script file LV3.py...
+
+File contents are:
+**********************************************************************
+import matplotlib.pylab as p
+import scipy.integrate as integrate
+import scipy as sc
+import sys
+
+
+def dCR_dt(pops, t=0):
+	R = pops[0]
+	C = pops[1]
+	K = 2
+	dRdt = R * (1 + r*(1 - R / K) - a * C)
+	dCdt = C * (1 - z + e * a * R)
+	return sc.array([dRdt, dCdt])
+
+def lv2(r, a, z, e):
+	t = sc.linspace(0, 15, 1000)
+	R0 = 10
+	C0 = 5
+	RC0 = sc.array([R0, C0])
+	pops, infodict = integrate.odeint(dCR_dt, RC0, t, full_output=True)
+	f1 = p.figure()
+	p.plot(pops[:,0], pops[:,1], 'r-')
+	p.grid()
+	p.xlabel('Resource density')
+	p.ylabel('Consumer density')
+	p.title('Consumer-Resource population dynamics')
+	p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+	f1.savefig('../results/LV3.pdf')
+
+r, a, z, e = float(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4])
+lv2(r, a, z, e)
+
+**********************************************************************
+
+Testing LV3.py...
+
+LV3.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 93.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+  File "LV3.py", line 27
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+
+======================================================================
+Inspecting script file profileme2.py...
+
+File contents are:
+**********************************************************************
+def my_squares(iters):
+    out = [i ** 2 for i in range(iters)]
+    return out
+
+def my_join(iters, string):
+    out = ''
+    for i in range(iters):
+        out += ", " + string
+    return out
+
+def run_my_funcs(x,y):
+    print(x,y)
+    my_squares(x)
+    my_join(x,y)
+    return 0
+
+run_my_funcs(10000000,"My string")**********************************************************************
+
+Testing profileme2.py...
+
+profileme2.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 89.5
+
+Output (only first 500 characters): 
+
+**********************************************************************
+10000000 My string
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 3.63900s
+
+======================================================================
+Inspecting script file timeitme.py...
+
+File contents are:
+**********************************************************************
+##############################################################################
+# loops vs. list comprehensions: which is faster?
+##############################################################################
+
+iters = 1000000
+
+import timeit
+
+from profileme import my_squares as my_squares_loops
+
+from profileme2 import my_squares as my_squares_lc
+
+##############################################################################
+# loops vs. the join method for strings: which is faster?
+##############################################################################
+
+mystring = "my string"
+
+from profileme import my_join as my_join_join
+
+from profileme2 import my_join as my_join
+**********************************************************************
+
+Testing timeitme.py...
+
+timeitme.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 87.5
+
+Output (only first 500 characters): 
+
+**********************************************************************
+10000000 My string
+10000000 My string
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 9.96301s
+
+======================================================================
+Inspecting script file blackbirds.py...
+
+File contents are:
+**********************************************************************
+import re
+
+# Read the file (using a different, more python 3 way, just for fun!)
+with open('../data/blackbirds.txt', 'r', encoding='utf-8') as f:
+    text = f.read()
+    for line in text.split('\n'):
+        if 'Kingdom' in line:
+            name = re.findall(r'Kingdom\t(.*)', line)[0]
+            print(f'Kingdom: %s' % name.split('–')[-1].strip())
+        elif 'Phylum' in line:
+            name = re.findall(r'Phylum\t(.*)', line)[0]
+            print(f'Phylum: %s' % name.split('–')[-1].strip())
+        elif 'Species' in line:
+            name = re.findall(r'Species\t(.*)', line)[0]
+            print(f'Species: %s' % name.split('–')[-1].strip())
+
+# replace \t's and \n's with a spaces:
+text = text.replace('\t',' ')
+text = text.replace('\n',' ')
+# You may want to make other changes to the text. 
+
+# In particular, note that there are "strange characters" (these are accents and
+# non-ascii symbols) because we don't care for them, first transform to ASCII:
+
+text = text.encode('ascii', 'ignore') # first encode into ascii bytes
+text = text.decode('ascii', 'ignore') # Now decode back to string
+
+# Now extend this script so that it captures the Kingdom, Phylum and Species
+# name for each species and prints it out to screen neatly.
+
+# Hint: you may want to use re.findall(my_reg, text)... Keep in mind that there
+# are multiple ways to skin this cat! Your solution could involve multiple
+# regular expression calls (easier!), or a single one (harder!)**********************************************************************
+
+Testing blackbirds.py...
+
+blackbirds.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 85.5
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+  File "blackbirds.py", line 9
+    print(f'Kingdom: %s' % name.split('–')[-1].strip())
+                       ^
+SyntaxError: invalid syntax
+
+======================================================================
+Inspecting script file TestR.R...
+
+File contents are:
+**********************************************************************
+print("Hello, this is R!")**********************************************************************
+
+Testing TestR.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Hello, this is R!"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.10129s
+
+======================================================================
+Inspecting script file profileme.py...
+
+File contents are:
+**********************************************************************
+def my_squares(iters):
+    out = []
+    for i in range(iters):
+        out.append(i ** 2)
+    return out
+
+def my_join(iters, string):
+    out = ''
+    for i in range(iters):
+        out += string.join(", ")
+    return out
+
+def run_my_funcs(x,y):
+    print(x,y)
+    my_squares(x)
+    my_join(x,y)
+    return 0
+
+run_my_funcs(10000000,"My string")**********************************************************************
+
+Testing profileme.py...
+
+profileme.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 82.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+10000000 My string
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 6.46656s
+
+======================================================================
+Inspecting script file LV4.py...
+
+File contents are:
+**********************************************************************
+import matplotlib.pylab as p
+import scipy.integrate as integrate
+import scipy as sc
+from scipy import stats
+import sys
+
+
+def dCR_dt(pops, E=0):
+	R = pops[0]
+	C = pops[1]
+	K = 2
+	dRdt = R * ( 1 + (r + E) * (1 - R / K) - a * C)
+	dCdt = C * (1 - z + e * a * R)
+	return sc.array([dRdt, dCdt])
+
+def lv2(r, a, z, e):
+	t = sc.linspace(0, 15, 1000)
+	R0 = 10
+	C0 = 5
+	RC0 = sc.array([R0, C0])
+	E = stats.norm.rvs(loc=0, scale=0.1, size=1000)
+	pops, infodict = integrate.odeint(dCR_dt, RC0, E, full_output=True)
+	f1 = p.figure()
+	p.plot(pops[:,0], pops[:,1], 'r-')
+	p.grid()
+	p.xlabel('Resource density')
+	p.ylabel('Consumer density')
+	p.title('Consumer-Resource population dynamics')
+	p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+	f1.savefig('../results/LV4.pdf')
+
+r, a, z, e = float(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4])
+lv2(r, a, z, e)**********************************************************************
+
+Testing LV4.py...
+
+LV4.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 79.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+  File "LV4.py", line 29
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+
+======================================================================
+Inspecting script file fmr.R...
+
+File contents are:
+**********************************************************************
+# Plots log(field metabolic rate) against log(body mass) for the Nagy et al 
+# 1999 dataset to a file fmr.pdf.
+# Writes the list of species names to species.csv
+
+cat("Reading CSV\n")
+
+nagy <- read.csv('../Data/NagyEtAl1999.csv', stringsAsFactors = FALSE)
+
+cat("Creating graph\n")
+pdf('../Results/fmr_plot.pdf', 11, 8.5)
+col <- c(Aves='purple3', Mammalia='red3', Reptilia='green3')
+plot(log10(nagy$M.g), log10(nagy$FMR.kJ.day.1), pch=19, col=col[nagy$Class], 
+     xlab=~log[10](M), ylab=~log[10](FMR))
+for(class in unique(nagy$Class)){
+    model <- lm(log10(FMR.kJ.day.1) ~ log10(M.g), data=nagy[nagy$Class==class,])
+    abline(model, col=col[class])
+}
+dev.off()
+
+cat("Finished in R!\n")**********************************************************************
+
+Testing fmr.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+Reading CSV
+Creating graph
+
+**********************************************************************
+
+Encountered error (or warning):
+Error in pdf("../Results/fmr_plot.pdf", 11, 8.5) : 
+  cannot open file '../Results/fmr_plot.pdf'
+Execution halted
+
+======================================================================
+Inspecting script file using_os.py...
+
+File contents are:
+**********************************************************************
+""" This is blah blah"""
+
+# Use the subprocess.os module to get a list of files and  directories 
+# in your ubuntu home directory 
+
+# Hint: look in subprocess.os and/or subprocess.os.path and/or 
+# subprocess.os.walk for helpful functions
+
+import subprocess
+
+#################################
+#~Get a list of files and 
+#~directories in your home/ that start with an uppercase 'C'
+
+# Type your code here:
+
+# Get the user's home directory.
+home = subprocess.os.path.expanduser("~")
+
+# Create a list to store the results.
+FilesDirsStartingWithC = []
+
+# Use a for loop to walk through the home directory.
+for (dir, subdir, files) in subprocess.os.walk(home):
+  
+#################################
+# Get files and directories in your home/ that start with either an 
+# upper or lower case 'C'
+
+# Type your code here:
+
+    if subdir and subdir[0][0].upper() == 'C':
+        FilesDirsStartingWithC.append(subdir)
+        print(subdir)
+    if files and files[0][0].upper() == 'C':
+        FilesDirsStartingWithC.append(files)
+        print(files)
+
+#################################
+# Get only directories in your home/ that start with either an upper or 
+#~lower case 'C' 
+
+# Type your code here:
+
+    if subdir and subdir[0][0].upper() == 'C':
+        FilesDirsStartingWithC.append(subdir)
+        print(subdir)
+    
+    
+**********************************************************************
+
+Testing using_os.py...
+
+using_os.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 79.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+['crashes', 'gmp', 'bookmarkbackups', 'minidumps']
+['cert8.db', 'revocations.txt', 'formhistory.sqlite', 'times.json', 'places.sqlite-journal', 'content-prefs.sqlite', 'sessionCheckpoints.json', 'addons.json', '.parentlock', 'extensions.json', 'blocklist.xml', 'webappsstore.sqlite', 'sessionstore.js', 'xulstore.json', 'secmod.db', 'key3.db', 'places.sqlite']
+['crashes', 'gmp', 'bookmarkbackups', 'minidumps']
+['core', 'logger']
+['core', 'logger']
+['core', 'src', 'types', 'logger', 'utils', 'node_m
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 1.54088s
+
+======================================================================
+Inspecting script file LV1.py...
+
+File contents are:
+**********************************************************************
+import matplotlib.pylab as p
+import scipy.integrate as integrate
+import scipy as sc
+
+#define a function that returns the growth rate of consumer and resource population at any given time step.
+def dCR_dt(pops, t=0):
+	R = pops[0]
+	C = pops[1]
+	#assign some parameter values	
+	r = 1.
+	a = 0.1
+	z = 1.5
+	e = 0.75
+	dRdt = r * R - a * R * C
+	dCdt = -z * C + e * a * R * C
+	return sc.array([dRdt, dCdt])	
+
+#Define the time vector; let's integrate from time point 0 to 15, using 1000 sub-divisions of time:
+t = sc.linspace(0, 15, 1000)
+#Set the initial conditions for the two populations (10 resources and 5 consumers per unit area), and convert the two into an array (because our dCR_dt function take an array as input).
+R0 = 10
+C0 = 5
+RC0 = sc.array([R0, C0])
+#numerically integrate this system forward from those starting conditions:
+pops, infodict = integrate.odeint(dCR_dt, RC0, t, full_output=True)
+
+#open an empty figure object 
+f1 = p.figure(1)
+p.plot(t, pops[:,0], 'g-', label='Resource density') # Plot
+p.plot(t, pops[:,1]  , 'b-', label='Consumer density')
+p.grid()
+p.legend(loc='best')
+p.xlabel('Time')
+p.ylabel('Population density')
+p.title('Consumer-Resource population dynamics')
+#p.show()# To display the figure
+f1.savefig('../results/LV_model.pdf') #Save figure
+
+f2 = p.figure(2)
+p.plot(pops[:,0], pops[:,1], 'r-', color='red')
+p.grid()
+p.xlabel('Resource density')
+p.ylabel('Consumer density')
+p.title('Consumer-Resource population dynamics')
+f2.savefig('../results/LV_model2.pdf')
+	
+**********************************************************************
+
+Testing LV1.py...
+
+LV1.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 76.5
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.80228s
+
+======================================================================
+Inspecting script file DrawFW.py...
+
+File contents are:
+**********************************************************************
+import networkx as nx
+import scipy as sc
+import matplotlib.pylab as p
+
+
+def GenRdmAdjList(N = 2, C = 0.5):
+    """
+    """
+    Ids = range(N)
+    ALst = []
+    for i in Ids:
+        if sc.random.uniform(0,1,1) < C:
+            Lnk = sc.random.choice(Ids,2).tolist()
+            if Lnk[0] != Lnk[1]: #avoid self (e.g., cannibalistic) loops
+                ALst.append(Lnk)
+    return ALst
+
+MaxN = 30
+C = 0.75
+AdjL = sc.array(GenRdmAdjList(MaxN, C))
+Sps = sc.unique(AdjL) # get species ids
+SizRan = ([-10,10]) #use log10 scale
+Sizs = sc.random.uniform(SizRan[0],SizRan[1],MaxN)
+p.close('all') # close all open plot objects
+
+f1 = p.figure()
+pos = nx.circular_layout(Sps)
+G = nx.Graph()
+G.add_nodes_from(Sps)
+G.add_edges_from(tuple(AdjL))
+NodSizs= 1000 * (Sizs-min(Sizs))/(max(Sizs)-min(Sizs))
+nx.draw_networkx(G, pos, node_size = NodSizs, node_color = 'r')
+f1.savefig('../results/DrawFW.pdf')
+
+**********************************************************************
+
+Testing DrawFW.py...
+
+DrawFW.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Missing docstring, either in one or functions and/or at the script level
+
+Current Points = 76.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:522: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if not cb.is_string_like(edge_color) \
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:543: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if cb.is_string_like(edge_color) or len(edge_color) == 1:
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:724: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if not cb.is_string_like(label):
+
+======================================================================
+Inspecting script file blackbirds(1).py...
+
+File contents are:
+**********************************************************************
+import re
+
+# Read the file (using a different, more python 3 way, just for fun!)
+with open('../data/blackbirds.txt', 'r', encoding='utf-8') as f:
+    text = f.read()
+    for line in text.split('\n'):
+        if 'Kingdom' in line:
+            name = re.findall(r'Kingdom\t(.*)', line)[0]
+            print(f'Kingdom: %s' % name.split('–')[-1].strip())
+        elif 'Phylum' in line:
+            name = re.findall(r'Phylum\t(.*)', line)[0]
+            print(f'Phylum: %s' % name.split('–')[-1].strip())
+        elif 'Species' in line:
+            name = re.findall(r'Species\t(.*)', line)[0]
+            print(f'Species: %s' % name.split('–')[-1].strip())
+
+# replace \t's and \n's with a spaces:
+text = text.replace('\t',' ')
+text = text.replace('\n',' ')
+# You may want to make other changes to the text. 
+
+# In particular, note that there are "strange characters" (these are accents and
+# non-ascii symbols) because we don't care for them, first transform to ASCII:
+
+text = text.encode('ascii', 'ignore') # first encode into ascii bytes
+text = text.decode('ascii', 'ignore') # Now decode back to string
+
+# Now extend this script so that it captures the Kingdom, Phylum and Species
+# name for each species and prints it out to screen neatly.
+
+# Hint: you may want to use re.findall(my_reg, text)... Keep in mind that there
+# are multiple ways to skin this cat! Your solution could involve multiple
+# regular expression calls (easier!), or a single one (harder!)**********************************************************************
+
+Testing blackbirds(1).py...
+
+blackbirds(1).py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 74.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+/bin/sh: 1: Syntax error: "(" unexpected
+
+======================================================================
+Inspecting script file run_fmr_R.py...
+
+File contents are:
+**********************************************************************
+import subprocess
+
+output = subprocess.Popen("Rscript --verbose fmr.R > ../Results/fmr.Rout 2> ../Results/TestR_errFile.Rout", stdout=subprocess.PIPE, shell=True)
+print(output.stdout.read().decode())**********************************************************************
+
+Testing run_fmr_R.py...
+
+run_fmr_R.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 72.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+
+**********************************************************************
+
+Encountered error (or warning):
+/bin/sh: 1: cannot create ../Results/fmr.Rout: Directory nonexistent
+
+======================================================================
+Inspecting script file run_LV.py...
+
+File contents are:
+**********************************************************************
+from subprocess import Popen, PIPE
+
+output1 = Popen('python3 -m cProfile LV1.py', stdout=PIPE, shell=True).stdout.read().decode()
+output2 = Popen('python3 -m cProfile LV2.py 1 0.1 1.5 0.75', stdout=PIPE, shell=True).stdout.read().decode()
+output3 = Popen('python3 -m cProfile LV3.py 1 0.1 1.5 0.75', stdout=PIPE, shell=True).stdout.read().decode()
+output4 = Popen('python3 -m cProfile LV4.py 1 0.1 1.5 0.75', stdout=PIPE, shell=True).stdout.read().decode()
+print(output1)
+print(output2)
+print(output3)
+print(output4)
+
+**********************************************************************
+
+Testing run_LV.py...
+
+run_LV.py is a Python script file;
+
+checking for docstrings...
+
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 70.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+         548036 function calls (537208 primitive calls) in 0.833 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       36    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1043(__import__)
+      684    0.002    0.000    0.002    0.000 <frozen importlib._bootstrap>:119(release)
+      405    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:159(__init__)
+      405    0.001    0.000    0.004    0.000 <frozen
+**********************************************************************
+
+Encountered error (or warning):
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/runpy.py", line 184, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.5/cProfile.py", line 160, in <module>
+    main()
+  File "/usr/lib/python3.5/cProfile.py", line 146, in main
+    code = compile(fp.read(), progname, 'exec')
+  File "LV2.py", line 27
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/runpy.py", line 184, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.5/cProfile.py", line 160, in <module>
+    main()
+  File "/usr/lib/python3.5/cProfile.py", line 146, in main
+    code = compile(fp.read(), progname, 'exec')
+  File "LV3.py", line 27
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/runpy.py", line 184, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.5/cProfile.py", line 160, in <module>
+    main()
+  File "/usr/lib/python3.5/cProfile.py", line 146, in main
+    code = compile(fp.read(), progname, 'exec')
+  File "LV4.py", line 29
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+
+======================================================================
+Inspecting script file LV2.py...
+
+File contents are:
+**********************************************************************
+import matplotlib.pylab as p
+import scipy.integrate as integrate
+import scipy as sc
+import sys
+
+
+def dCR_dt(pops, t=0):
+	R = pops[0]
+	C = pops[1]
+	K = 2
+	dRdt = r * R * (1 - R / K) - a * R * C
+	dCdt = -z * C + e * a * R * C
+	return sc.array([dRdt, dCdt])
+
+def lv2(r, a, z, e):
+	t = sc.linspace(0, 15, 1000)
+	R0 = 10
+	C0 = 5
+	RC0 = sc.array([R0, C0])
+	pops, infodict = integrate.odeint(dCR_dt, RC0, t, full_output=True)
+	f1 = p.figure()
+	p.plot(pops[:,0], pops[:,1], 'r-')
+	p.grid()
+	p.xlabel('Resource density')
+	p.ylabel('Consumer density')
+	p.title('Consumer-Resource population dynamics')
+	p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+	f1.savefig('../results/LV2.pdf')
+
+r, a, z, e = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+lv2(r, a, z, e)**********************************************************************
+
+Testing LV2.py...
+
+LV2.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 67.0
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+  File "LV2.py", line 27
+    p.legend([f'r={r}\na={a}\nz={z}\ne={e}'])
+                                          ^
+SyntaxError: invalid syntax
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 10 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 67.0
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
