@@ -9,13 +9,13 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 5.70 MiB on disk 
+Your Git repo size this week is about 35.95 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git
+Found the following directories in parent directory: Week1, Week7, Assessment, HPC, Week2, .git, Week3
 
-Found the following files in parent directory: README.txt, .gitignore
+Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
 Checking for key files in parent directory...
 
@@ -34,12 +34,13 @@ Printing contents of README.txt:
 This is a folder about courseworks of CMEE.
 Author: Yuan Zhang
 Email： yz12119@ic.ac.uk
+
 **********************************************************************
 
 ======================================================================
 Looking for the weekly directories...
 
-Found 2 weekly directories: Week1, Week2
+Found 4 weekly directories: Week1, Week2, Week3, Week7
 
 The Week2 directory will be assessed 
 
@@ -52,7 +53,7 @@ Assessing WEEK2...
 
 Found the following directories: Code, sandbox, Data, Results
 
-Found the following files: Readme.txt
+Found the following files: Readme.txt, .DS_Store
 
 Checking for readme file in weekly directory...
 
@@ -169,12 +170,13 @@ print(list_of_month)
 Testing lc2.py...
 
 lc2.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 99
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 98
 
 Output (only first 500 characters): 
 
@@ -186,7 +188,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.02947s
+Time consumed = 0.02986s
 
 ======================================================================
 Inspecting script file boilerplate.py...
@@ -223,9 +225,12 @@ if __name__ == "__main__":
 Testing boilerplate.py...
 
 boilerplate.py is a Python script file;
- checking for docstrings...
 
-Found one or more doctrings!
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Current Points = 98
 
 Output (only first 500 characters): 
 
@@ -236,7 +241,7 @@ This is a boilerplate
 
 Code ran without errors
 
-Time consumed = 0.02740s
+Time consumed = 0.03161s
 
 ======================================================================
 Inspecting script file basic_csv.py...
@@ -274,12 +279,13 @@ g.close()**********************************************************************
 Testing basic_csv.py...
 
 basic_csv.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 98
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 96
 
 Output (only first 500 characters): 
 
@@ -325,12 +331,13 @@ while z < 100:
 Testing cfexercises2.py...
 
 cfexercises2.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 97
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 94
 
 Output (only first 500 characters): 
 
@@ -362,7 +369,7 @@ hello
 
 Code ran without errors
 
-Time consumed = 0.02851s
+Time consumed = 0.02883s
 
 ======================================================================
 Inspecting script file dictionary.py...
@@ -396,12 +403,13 @@ print(res)**********************************************************************
 Testing dictionary.py...
 
 dictionary.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 96
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 92
 
 Output (only first 500 characters): 
 
@@ -412,7 +420,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.02709s
+Time consumed = 0.03035s
 
 ======================================================================
 Inspecting script file debugme.py...
@@ -430,12 +438,13 @@ makeabug(25)********************************************************************
 Testing debugme.py...
 
 debugme.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 95
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 89.5
 
 Output (only first 500 characters): 
 
@@ -486,12 +495,13 @@ print("Outside the function, the value of _b_global is ", _b_global)************
 Testing scope.py...
 
 scope.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 94
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 87.0
 
 Output (only first 500 characters): 
 
@@ -506,7 +516,7 @@ Outside the function, the value of _b_global is  15
 
 Code ran without errors
 
-Time consumed = 0.02672s
+Time consumed = 0.03068s
 
 ======================================================================
 Inspecting script file basic_io3.py...
@@ -535,12 +545,13 @@ print(another_dictionary)*******************************************************
 Testing basic_io3.py...
 
 basic_io3.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 93
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 85.0
 
 Output (only first 500 characters): 
 
@@ -551,7 +562,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.03257s
+Time consumed = 0.03417s
 
 ======================================================================
 Inspecting script file cfexercises1.py...
@@ -623,14 +634,14 @@ if (__name__ == "__main__"):
 Testing cfexercises1.py...
 
 cfexercises1.py is a Python script file;
- checking for docstrings...
 
-Found one or more doctrings!
+checking for docstrings...
 
-Missing docstrings in one more functions!
-.5 pt deducted per missing docstring
+Found one or more docstrings and functions
 
-Current Points = 85.0
+Missing docstring, either in one or functions and/or at the script level
+
+Current Points = 82.0
 
 Output (only first 500 characters): 
 
@@ -646,7 +657,7 @@ The anthor factorial result is 3628800!
 
 Code ran without errors
 
-Time consumed = 0.03140s
+Time consumed = 0.02950s
 
 ======================================================================
 Inspecting script file tuple.py...
@@ -671,12 +682,13 @@ for i in range(5):
 Testing tuple.py...
 
 tuple.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 84.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 80.0
 
 Output (only first 500 characters): 
 
@@ -691,7 +703,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.03105s
+Time consumed = 0.02741s
 
 ======================================================================
 Inspecting script file lc1.py...
@@ -755,12 +767,13 @@ print(mean_body_masses)
 Testing lc1.py...
 
 lc1.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 83.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 78.0
 
 Output (only first 500 characters): 
 
@@ -776,7 +789,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.02952s
+Time consumed = 0.03115s
 
 ======================================================================
 Inspecting script file oaks_debugme.py...
@@ -812,9 +825,14 @@ if (__name__ == "__main__"):
 Testing oaks_debugme.py...
 
 oaks_debugme.py is a Python script file;
- checking for docstrings...
 
-Found one or more doctrings!
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Missing docstring, either in one or functions and/or at the script level
+
+Current Points = 77.0
 
 Output (only first 500 characters): 
 
@@ -872,18 +890,19 @@ print(oaks_lc)******************************************************************
 Testing oaks.py...
 
 oaks.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 82.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 74.5
 
 Output (only first 500 characters): 
 
 **********************************************************************
-{'Quercus cerris', 'Quercus robur', 'Quercus petraea'}
-{'Quercus cerris', 'Quercus robur', 'Quercus petraea'}
+{'Quercus cerris', 'Quercus petraea', 'Quercus robur'}
+{'Quercus cerris', 'Quercus petraea', 'Quercus robur'}
 {'QUERCUS ROBUR', 'QUERCUS CERRIS', 'QUERCUS PETRAEA'}
 {'QUERCUS ROBUR', 'QUERCUS CERRIS', 'QUERCUS PETRAEA'}
 
@@ -891,7 +910,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.02701s
+Time consumed = 0.02881s
 
 ======================================================================
 Inspecting script file MyScript.py...
@@ -922,12 +941,13 @@ f.close()**********************************************************************
 Testing MyScript.py...
 
 MyScript.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 81.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 72.5
 
 Output (only first 500 characters): 
 
@@ -957,7 +977,7 @@ Fourth Line
 
 Code ran without errors
 
-Time consumed = 0.03196s
+Time consumed = 0.02772s
 
 ======================================================================
 Inspecting script file loops.py...
@@ -992,12 +1012,13 @@ while b:
 Testing loops.py...
 
 loops.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 80.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 70.5
 
 Output (only first 500 characters): 
 
@@ -1126,7 +1147,7 @@ GERONIMO! infinite loop! ctrl+c
 
 Code ran without errors
 
-Time consumed = 10.34626s
+Time consumed = 10.33701s
 
 ======================================================================
 Inspecting script file using_name.py...
@@ -1147,12 +1168,13 @@ print("This module's name is: " + __name__)
 Testing using_name.py...
 
 using_name.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 79.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 68.5
 
 Output (only first 500 characters): 
 
@@ -1164,7 +1186,7 @@ This module's name is: __main__
 
 Code ran without errors
 
-Time consumed = 0.06547s
+Time consumed = 0.06774s
 
 ======================================================================
 Inspecting script file align_seqs.py...
@@ -1236,12 +1258,13 @@ print("Best score:", my_best_score)
 Testing align_seqs.py...
 
 align_seqs.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 78.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 66.0
 
 Output (only first 500 characters): 
 
@@ -1275,12 +1298,13 @@ f.close()**********************************************************************
 Testing basic_io2.py...
 
 basic_io2.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 77.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 64.0
 
 Output (only first 500 characters): 
 
@@ -1290,7 +1314,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.03071s
+Time consumed = 0.02972s
 
 ======================================================================
 Inspecting script file sysargv.py...
@@ -1307,12 +1331,13 @@ print("The arguments are: " , str(sys.argv))************************************
 Testing sysargv.py...
 
 sysargv.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 76.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 62.0
 
 Output (only first 500 characters): 
 
@@ -1325,7 +1350,7 @@ The arguments are:  ['sysargv.py']
 
 Code ran without errors
 
-Time consumed = 0.02692s
+Time consumed = 0.02755s
 
 ======================================================================
 Inspecting script file control_flow.py...
@@ -1398,9 +1423,14 @@ if (__name__ == "__main__"):
 Testing control_flow.py...
 
 control_flow.py is a Python script file;
- checking for docstrings...
 
-Found one or more doctrings!
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Missing docstring, either in one or functions and/or at the script level
+
+Current Points = 61.5
 
 Output (only first 500 characters): 
 
@@ -1432,7 +1462,7 @@ True
 
 Code ran without errors
 
-Time consumed = 0.02683s
+Time consumed = 0.02776s
 
 ======================================================================
 Inspecting script file test_control_flow.py...
@@ -1488,9 +1518,14 @@ doctest.testmod()   # To run with embedded tests********************************
 Testing test_control_flow.py...
 
 test_control_flow.py is a Python script file;
- checking for docstrings...
 
-Found one or more doctrings!
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Missing docstring, either in one or functions and/or at the script level
+
+Current Points = 61.0
 
 Output (only first 500 characters): 
 
@@ -1500,7 +1535,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.07818s
+Time consumed = 0.06313s
 
 ======================================================================
 Inspecting script file config.py...
@@ -1528,12 +1563,13 @@ print("Outside the function, the value of _a_global is", _a_global)
 Testing config.py...
 
 config.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 75.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 58.5
 
 Output (only first 500 characters): 
 
@@ -1546,7 +1582,7 @@ Outside the function, the value of _a_global is 10
 
 Code ran without errors
 
-Time consumed = 0.03279s
+Time consumed = 0.03001s
 
 ======================================================================
 Inspecting script file basic_io1.py...
@@ -1577,12 +1613,13 @@ f.close()**********************************************************************
 Testing basic_io1.py...
 
 basic_io1.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 74.0
+No functions, but no script-level docstring either
+2 pts deducted
+
+Current Points = 56.5
 
 Output (only first 500 characters): 
 
@@ -1612,7 +1649,7 @@ Fourth Line
 
 Code ran without errors
 
-Time consumed = 0.02963s
+Time consumed = 0.03035s
 
 ======================================================================
 ======================================================================
@@ -1625,6 +1662,6 @@ Ran into 4 errors
 
 FINISHED WEEKLY ASSESSMENT
 
-Current Points for the Week = 74.0
+Current Points for the Week = 56.5
 
 NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!

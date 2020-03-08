@@ -9,13 +9,13 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 5.70 MiB on disk 
+Your Git repo size this week is about 35.95 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git
+Found the following directories in parent directory: Week1, Week7, Assessment, HPC, Week2, .git, Week3
 
-Found the following files in parent directory: README.txt, .gitignore
+Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
 Checking for key files in parent directory...
 
@@ -34,12 +34,13 @@ Printing contents of README.txt:
 This is a folder about courseworks of CMEE.
 Author: Yuan Zhang
 Email： yz12119@ic.ac.uk
+
 **********************************************************************
 
 ======================================================================
 Looking for the weekly directories...
 
-Found 2 weekly directories: Week1, Week2
+Found 4 weekly directories: Week1, Week2, Week3, Week7
 
 The Week1 directory will be assessed 
 
@@ -50,9 +51,9 @@ PART 2: Checking weekly code and workflow...
 ======================================================================
 Assessing WEEK1...
 
-Found the following directories: Code, Data, Sandbox
+Found the following directories: Code, Data, Sandbox, Results
 
-Found the following files: Readme.txt
+Found the following files: Readme.txt, .DS_Store
 
 Checking for readme file in weekly directory...
 
@@ -112,6 +113,8 @@ This is a folder contains several test files.
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
@@ -138,13 +141,12 @@ This is a folder contains several test files.
 
 
 
+>>>>>>> f9f3daf0facfc5d0b17ec6029e6aa30fc2c72a47
 **********************************************************************
 
-Results directory missing!
+Found following files in results directory: ...
 
-Creating Results directory...
-
-Found 12 code files: ConcatenateTwoFiles.sh, CountLines.sh, variables.sh, CompileLaTeX.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, FirstBiblio.bib, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
+Found 13 code files: ConcatenateTwoFiles.sh, .txt, CountLines.sh, variables.sh, CompileLaTeX.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, FirstBiblio.bib, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
 
 Found the following extra files: .DS_Store
 0.5 pt deducted per extra file
@@ -179,6 +181,15 @@ Merged File is
 Encountered error (or warning):
 ConcatenateTwoFiles.sh: line 3: $3: ambiguous redirect
 ConcatenateTwoFiles.sh: line 4: $3: ambiguous redirect
+
+======================================================================
+Inspecting script file .txt...
+
+File contents are:
+**********************************************************************
+**********************************************************************
+
+Testing .txt...
 
 ======================================================================
 Inspecting script file CountLines.sh...
@@ -298,29 +309,29 @@ rm: cannot remove '*.out': No such file or directory
 rm: cannot remove '*.snm': No such file or directory
 rm: cannot remove '*.toc': No such file or directory
 
-** (evince:7901): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2019-20/Coursework/StudentRepos/YuanZhang_YZ12119/Week1/Code/.pdf': No such file or directory
+** (evince:13462): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2019-20/Coursework/StudentRepos/YuanZhang_YZ12119/Week1/Code/.pdf': No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:7901): WARNING **: Error setting file metadata: No such file or directory
+** (evince:13462): WARNING **: Error setting file metadata: No such file or directory
 
 ======================================================================
 Inspecting script file tiff2png.sh...
@@ -369,7 +380,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.00827s
+Time consumed = 0.00632s
 
 ======================================================================
 Inspecting script file FirstExample.tex...
@@ -436,7 +447,7 @@ Hello mhasoba
 
 Code ran without errors
 
-Time consumed = 0.00586s
+Time consumed = 0.00471s
 
 ======================================================================
 Inspecting script file FirstBiblio.bib...
@@ -512,7 +523,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.00678s
+Time consumed = 0.00491s
 
 ======================================================================
 Inspecting script file boilerplate.sh...
@@ -542,7 +553,7 @@ This is a shell scripts!
 
 Code ran without errors
 
-Time consumed = 0.00424s
+Time consumed = 0.00538s
 
 ======================================================================
 ======================================================================

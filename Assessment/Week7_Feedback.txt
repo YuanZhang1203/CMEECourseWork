@@ -9,13 +9,13 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 5.70 MiB on disk 
+Your Git repo size this week is about 35.95 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Week7, Assessment, Week2, .git, Week3
+Found the following directories in parent directory: Week1, Week7, Assessment, HPC, Week2, .git, Week3
 
-Found the following files in parent directory: README.txt, .gitignore
+Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
 Checking for key files in parent directory...
 
@@ -226,7 +226,7 @@ found a match: an
 
 Code ran without errors
 
-Time consumed = 0.03571s
+Time consumed = 0.02796s
 
 ======================================================================
 Inspecting script file LV3.py...
@@ -333,7 +333,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 3.63900s
+Time consumed = 3.62107s
 
 ======================================================================
 Inspecting script file timeitme.py...
@@ -384,7 +384,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 9.96301s
+Time consumed = 9.92723s
 
 ======================================================================
 Inspecting script file blackbirds.py...
@@ -466,7 +466,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.10129s
+Time consumed = 0.10259s
 
 ======================================================================
 Inspecting script file profileme.py...
@@ -513,7 +513,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 6.46656s
+Time consumed = 6.41656s
 
 ======================================================================
 Inspecting script file LV4.py...
@@ -690,14 +690,15 @@ Output (only first 500 characters):
 ['crashes', 'gmp', 'bookmarkbackups', 'minidumps']
 ['cert8.db', 'revocations.txt', 'formhistory.sqlite', 'times.json', 'places.sqlite-journal', 'content-prefs.sqlite', 'sessionCheckpoints.json', 'addons.json', '.parentlock', 'extensions.json', 'blocklist.xml', 'webappsstore.sqlite', 'sessionstore.js', 'xulstore.json', 'secmod.db', 'key3.db', 'places.sqlite']
 ['crashes', 'gmp', 'bookmarkbackups', 'minidumps']
-['core', 'logger']
-['core', 'logger']
-['core', 'src', 'types', 'logger', 'utils', 'node_m
+['config.js', 'commander.js', 'main.js']
+['components']
+['components']
+['CommonHTML', 'SV
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 1.54088s
+Time consumed = 1.54297s
 
 ======================================================================
 Inspecting script file LV1.py...
@@ -771,7 +772,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.80228s
+Time consumed = 0.82655s
 
 ======================================================================
 Inspecting script file DrawFW.py...
@@ -962,7 +963,7 @@ Current Points = 70.0
 Output (only first 500 characters): 
 
 **********************************************************************
-         548036 function calls (537208 primitive calls) in 0.833 seconds
+         548020 function calls (537192 primitive calls) in 0.827 seconds
 
    Ordered by: standard name
 
