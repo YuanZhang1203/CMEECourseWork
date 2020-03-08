@@ -9,13 +9,13 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 5.70 MiB on disk 
+Your Git repo size this week is about 35.95 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git, Week3
+Found the following directories in parent directory: Week1, Week7, Assessment, HPC, Week2, .git, Week3
 
-Found the following files in parent directory: README.txt, .gitignore
+Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
 Checking for key files in parent directory...
 
@@ -40,7 +40,7 @@ Email： yz12119@ic.ac.uk
 ======================================================================
 Looking for the weekly directories...
 
-Found 3 weekly directories: Week1, Week2, Week3
+Found 4 weekly directories: Week1, Week2, Week3, Week7
 
 The Week3 directory will be assessed 
 
@@ -53,7 +53,7 @@ Assessing WEEK3...
 
 Found the following directories: Code, Data, Sandbox, results
 
-Found the following files: Readme.txt
+Found the following files: Readme.txt, .DS_Store
 
 Checking for readme file in weekly directory...
 
@@ -159,10 +159,10 @@ ideally, Results directory should be empty other than, perhaps, a readme.
 
 Found 28 code files: browse.R, PP_Regress.R, Vectorize2.py, apply1.R, sample.R, control_flow.R, run_get_TreeHeight.sh, get_TreeHeight.py, GPDD_Data.R, boilerplate.R, TreeHeight.R, PP_Lattice.R, next.R, Ricker.R, Girko.R, Vectorize1.R, break.R, plotLin.R, basic_io.R, Vectorize1.py, apply2.R, get_TreeHeight.R, TAutoCorr.R, Vectorize2.R, DataWrangTidy.R, preallocate.R, PP_Regress_loc.R, DataWrang.R
 
-Found the following extra files: .Rhistory, .DS_Store
+Found the following extra files: .DS_Store, Rplots.pdf, .Rhistory
 0.5 pt deducted per extra file
 
-Current Points = 99.0
+Current Points = 98.5
 
 ======================================================================
 Testing script/code files...
@@ -197,7 +197,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.15895s
+Time consumed = 0.16605s
 
 ======================================================================
 Inspecting script file PP_Regress.R...
@@ -316,24 +316,25 @@ print('Vectorized Stochastic Ricker takes:: {}'.format(time_elapsed))***********
 Testing Vectorize2.py...
 
 Vectorize2.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 98.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 95.5
 
 Output (only first 500 characters): 
 
 **********************************************************************
-Stochastic Ricker takes:: 0:00:00.721195
-Vectorized Stochastic Ricker takes:: 0:00:00.007509
+Stochastic Ricker takes:: 0:00:00.719436
+Vectorized Stochastic Ricker takes:: 0:00:00.007565
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.86193s
+Time consumed = 0.86559s
 
 ======================================================================
 Inspecting script file apply1.R...
@@ -361,18 +362,18 @@ Testing apply1.R...
 Output (only first 500 characters): 
 
 **********************************************************************
- [1]  0.2538379  0.1325978 -0.2784951 -0.1905818 -0.3293368 -0.3104642
- [7] -0.3957946 -0.2391140  0.2177718  0.3032827
- [1] 0.4853528 1.0291587 0.6892486 1.5009718 1.3199873 0.4560733 0.8724081
- [8] 0.9572087 1.5757406 0.7007354
- [1] -0.19414577  0.12763822 -0.40793385 -0.33127845 -0.30820510 -0.07889131
- [7]  0.18309376  0.03771534  0.15327575 -0.01756478
+ [1]  0.66662924  0.17049992 -0.10203388  0.11598519  0.07759329  0.60102356
+ [7]  0.24642154  0.15536906 -0.17893885 -0.18663437
+ [1] 1.1357198 0.3309539 0.5140421 0.5475774 0.9181216 0.9633208 0.6110645
+ [8] 0.7214736 0.8781639 0.7082442
+ [1]  0.13474274  0.30071588  0.20081922  0.32399753  0.50537218 -0.05229244
+ [7]  0.32291459 -0.07186334  0.22706853 -0.32556018
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.06442s
+Time consumed = 0.10521s
 
 ======================================================================
 Inspecting script file sample.R...
@@ -452,7 +453,7 @@ Output (only first 500 characters):
 Encountered error (or warning):
 Error in sample(popn, n, replace = FALSE) : object 'popn' not found
 Calls: print ... system.time -> loopy_sample1 -> myexperiment -> sample
-Timing stopped at: 0.028 0 0.029
+Timing stopped at: 0.028 0.032 0.032
 Execution halted
 
 ======================================================================
@@ -548,7 +549,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.09604s
+Time consumed = 0.13012s
 
 ======================================================================
 Inspecting script file run_get_TreeHeight.sh...
@@ -639,12 +640,13 @@ dat.to_csv("../results/"+OutputFileName+"_treeheights_py.csv")
 Testing get_TreeHeight.py...
 
 get_TreeHeight.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 97.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 93.0
 
 Output (only first 500 characters): 
 
@@ -688,7 +690,7 @@ null device
 
 Code ran without errors
 
-Time consumed = 0.21262s
+Time consumed = 0.22720s
 
 ======================================================================
 Inspecting script file boilerplate.R...
@@ -726,7 +728,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.10073s
+Time consumed = 0.12192s
 
 ======================================================================
 Inspecting script file TreeHeight.R...
@@ -906,7 +908,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.11853s
+Time consumed = 0.12685s
 
 ======================================================================
 Inspecting script file Ricker.R...
@@ -942,7 +944,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.16449s
+Time consumed = 0.16803s
 
 ======================================================================
 Inspecting script file Girko.R...
@@ -1030,16 +1032,16 @@ Output (only first 500 characters):
 **********************************************************************
 [1] "Using loops, the time taken is:"
    user  system elapsed 
-  0.132   0.000   0.131 
+   0.08    0.00    0.08 
 [1] "Using the in-built vectorized function, the time taken is:"
    user  system elapsed 
-  0.000   0.000   0.001 
+  0.004   0.000   0.001 
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.31159s
+Time consumed = 0.25667s
 
 ======================================================================
 Inspecting script file break.R...
@@ -1077,7 +1079,7 @@ i equals  9
 
 Code ran without errors
 
-Time consumed = 0.11035s
+Time consumed = 0.12569s
 
 ======================================================================
 Inspecting script file plotLin.R...
@@ -1197,24 +1199,25 @@ print('Elapsed time of np.sum function: {}'.format(time_elapsed))***************
 Testing Vectorize1.py...
 
 Vectorize1.py is a Python script file;
- checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
+checking for docstrings...
 
-Current Points = 96.0
+Found one or more functions, but completely missing docstrings
+2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
+
+Current Points = 90.5
 
 Output (only first 500 characters): 
 
 **********************************************************************
-Elapsed time of SumAllElements function: 0:00:00.230075
-Elapsed time of np.sum function: 0:00:00.000720
+Elapsed time of SumAllElements function: 0:00:00.178403
+Elapsed time of np.sum function: 0:00:00.000630
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.46855s
+Time consumed = 0.34239s
 
 ======================================================================
 Inspecting script file apply2.R...
@@ -1236,18 +1239,18 @@ Testing apply2.R...
 Output (only first 500 characters): 
 
 **********************************************************************
-             [,1]       [,2]       [,3]      [,4]        [,5]        [,6]
- [1,] -0.34744123 -0.4096358  90.340186 -81.82910   58.018844 -175.853439
- [2,] -0.17047394 -0.7055071  34.172032 118.94054  184.904790  -46.571704
- [3,] -1.25025383 -1.1797357 189.278704 -51.63436   40.537468   95.879238
- [4,]  0.01537299  0.2745196  55.432707 109.69394 -138.988360   -4.886962
- [5,] -0.03682954 -0.5667338 -30.282884  63.43888  -12.829852   -8.736734
- [6,]  0.29149864  0.7902726 -70.388329 -13.87471   66.36
+            [,1]        [,2]       [,3]        [,4]      [,5]      [,6]
+ [1,]   85.42655 -2.13738175 -1.6869192  113.679008 -38.47352 -20.74877
+ [2,]   37.62146  0.03618665  0.4940474   10.092161 -46.25584 -25.45012
+ [3,]   51.34064 -1.39947005 -1.0355349  -30.121369 120.68478  74.09627
+ [4,]   59.64958  0.25980151 -0.4963146   58.123589  17.12213 -88.98356
+ [5,]  176.22102  1.17745804  0.5154544   55.672673  19.72653  20.31254
+ [6,]  -12.84354 -0.06894797 -0.4207224   75.783451 -36.96517 -91.458
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.11962s
+Time consumed = 0.12507s
 
 ======================================================================
 Inspecting script file get_TreeHeight.R...
@@ -1327,13 +1330,13 @@ Testing TAutoCorr.R...
 Output (only first 500 characters): 
 
 **********************************************************************
-[1] 2e-04
+[1] 3e-04
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 1.05302s
+Time consumed = 0.78575s
 
 ======================================================================
 Inspecting script file Vectorize2.R...
@@ -1390,16 +1393,16 @@ Output (only first 500 characters):
 **********************************************************************
 [1] "Stochastic Ricker takes:"
    user  system elapsed 
-  0.440   0.000   0.442 
+  0.260   0.044   0.238 
 [1] "Vectorized Stochastic Ricker takes:"
    user  system elapsed 
-  0.028   0.000   0.029 
+  0.016   0.000   0.017 
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.58732s
+Time consumed = 0.34641s
 
 ======================================================================
 Inspecting script file DataWrangTidy.R...
@@ -1531,7 +1534,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.12816s
+Time consumed = 0.13162s
 
 ======================================================================
 Inspecting script file PP_Regress_loc.R...
@@ -1682,6 +1685,6 @@ Ran into 13 errors
 
 FINISHED WEEKLY ASSESSMENT
 
-Current Points for the Week = 96.0
+Current Points for the Week = 90.5
 
 NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
