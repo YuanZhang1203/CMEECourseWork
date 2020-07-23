@@ -1,0 +1,140 @@
+%----------------------------------------------------------------------------------------
+% LaTeX 
+% TeXstudio 2.12.22 (git 2.12.22)
+% author: Yuan Zhang
+% yuan.zhang119@imperial.ac.uk
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=2cm}
+\linespread{1.5}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{lineno}
+\usepackage{cite}
+\usepackage{float} % set figure location
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[authoryear]{natbib}
+
+
+\begin{document}
+ 
+  	
+	\begin{titlepage} % Suppresses headers and footers on the title page
+		
+		\centering % Centre everything on the title page
+		
+		\scshape % Use small caps for all text on the title page
+		
+		\vspace*{\baselineskip} % White space at the top of the page
+		
+		%------------------------------------------------
+		%	Title
+		%------------------------------------------------
+		
+		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+		\rule{\textwidth}{0.4pt} % Thin horizontal rule
+		
+		\vspace{0.75\baselineskip} % Whitespace above the title
+		
+		{\LARGE Roles of Humidity and Temperature in COVID-19 Infection Dynamics \\} % Title
+		
+		\vspace{0.75\baselineskip} % Whitespace below the title
+		
+		\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+		\rule{\textwidth}{1.6pt} % Thick horizontal rule
+		
+		Keywords: Climate change, COVID-19, Public health, Temperature, humidity, Global Epidemic and Mobility Model
+		
+		\vspace{2\baselineskip} % Whitespace after the title block
+		
+		{\scshape\Large MSc Computational Methods in Ecology and Evolution\\Yuan Zhang \\}\
+		
+		\vspace*{3\baselineskip} % Whitespace under the anthour
+		
+		
+		Supervised By
+		
+		\vspace{0.5\baselineskip} % Whitespace before the editors
+		
+		{\scshape\Large Samraat Pawar \\} %Supervisor
+		
+		\vspace{0.5\baselineskip} 
+		
+		\textit{Life Science Department\\Imperial College London } % affiliation
+		
+		\vfill % Whitespace 
+	
+		\vspace{0.3\baselineskip} % Whitespace 
+		
+		2 April  
+		
+		{\large 2020} 
+		
+	\end{titlepage}
+
+\clearpage
+\tableofcontents
+
+
+\linenumbers %show line numbers
+
+\newpage
+
+
+\section{Introduction}  
+Corona Virus Disease 2019 (COVID-19), a new type of Coronavitus, accompanied as human-to-human transmission,  has became as a serious public health threat. Although similar to SARS-CoV and MERS-CoV, the COVID-19 is quite different \citep{R6, R7, R8}. The rapidly increasing evidence of human-to-human transmission suggest that the virus is more contagious than SARS-CoV and MERS-CoV \citep{R11}. Based on statistic by WHO(2020), the number of confirmed cases worldwide has exceeded 200 000. Besides, it also can be deadly for massive alveolar damage and progressive respiratory failure \citep{R11}. Although it has been found that 96\%  COVID-19 matched at whole genome level to a bat coronavirus\citep{R14}, other aspects such as transmission methods and affecting factors of this Coronavitus are unknown. In short, it is essensial to study this Coronavitus by suitable modeling.
+
+\paragraph{} Environmental factors  (Temperature, humidity) have proven to be important influencing factors on epidemic disease \citep{R1}.  Some literature indicates that a high temperature and high humidity climate can reduce virus transmission  \citep{R3} . However,in fact, there are still many confirmed diagnoses in tropical countries such as Singapore and Malaysia. Therefore, the influence of environmental factors is complex and unclear. Few literatures has invesitigate this aspect and one fit empirical data seems not well  \citep{R1}.
+
+\paragraph{} This study aims to investigate roles of Humidity and Temperature in COVID-19 infection dynamics. The proposed questions are:
+
+(1) Are Coronavirus infections phenomenological data in most cities showing similar trends in global scale? 
+
+(2) Whether environmental factors (focus on Temperature, humidity) have correlations with the number of diagnoses ? 
+
+(3) If the temperature and humidity factors are added to the existing model to modified the model, will it be more suitable for a large number of sample data?
+
+\section{Proposed Methods}
+\subsection{Data and preparation}
+Infections in different countries and regions;
+Different temperature and humidity around the world
+\subsection{ Analysis}
+\subsubsection{ Environmental  impact}
+First analyze the correlation between environmental factors and the number of infected people to see if you can find a rule from them(focus on the inflection point, minimum infection corresponding temperature and humidity). Some former researches has considered SARS and Environmental factors \citep{R9, R10}.
+
+\subsubsection{ Fitting model and Modified model}
+Fitting empirical data based on existing models:
+
+(1) Weibull distribution using the Maximum Likelihood Estimation (MLE) method \citep{R2} 
+This is linear regression, not true and the fit is macroscopically bad.
+
+(2) Microsimulation model to two countries: the UK  and the US \citep{R4}
+
+(3) A model based on aggregation of individuals according to disease status \citep{R15}
+
+Try to change the existing model through adding environmental factors, and then look at the degree of fit. 
+
+\section{Anticipated outputs and outcomes}
+The improved model with the environmental factor model is more suitable for global data. 
+
+\section{Project feasibility supported by a timeline of tasks}
+\begin{figure}[thpb]
+	\centering
+	\includegraphics[width = \textwidth]{Gantt.jpg}
+
+\end{figure}
+\section{The itemized budget}
+Noun
+\newpage
+
+\bibliographystyle{agsm}
+\bibliography{proposal}
+
+\end{document}

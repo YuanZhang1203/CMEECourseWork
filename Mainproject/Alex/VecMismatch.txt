@@ -1,0 +1,27 @@
+# integrate Euler Ltka equation in sagemath using proper constraints on all parameters
+
+# integrate(EuLo, x, alpha, infinity) 
+
+x, c, a, b, gamma, P_0, R_0, E_P, E_R, E_D, T_pkP, T_pkR, k, T, T_r = var('x c a b gamma P_0 R_0 E_P E_R E_D T_pkP T_pkR k T T_r')
+
+assume(a,"real", a < 1, gamma,"real", gamma < 1, b,"real", b > 0, c,"real", c > 1)    
+
+# Assign functions
+P = c* R_0 * exp(-(E_P/k) * (1/T - 1/T_r)) /(1 + (E_P / (E_D - E_P)) * exp((E_D / k)* (1/T_pkP - 1/T)))
+R = R_0 * exp(-(E_R/k) * (1/T - 1/T_r)) /(1 + (E_R / (E_D - E_R)) * exp((E_D/k)* (1/T_pkR - 1/(T-b))))
+Rb = R_0 * exp(-(E_R/k) * (1/(T-b) - 1/T_r)) /(1 + (E_R / (E_D - E_R)) * exp((E_D/k)* (1/T_pkR - 1/(T-b))))
+N = simplify(gamma * P - (1 - gamma) *R)
+Nb = simplify(gamma * P - (1 - gamma) *Rb)
+
+P_OTR = c* R_0 * exp(-(E_P/k) * ((1/T) - (1/T_r)))
+R_OTR = R_0 * exp(-(E_R/k) * ((1/T - (1/T_r))))
+Rb_OTR = R_0 * exp(-(E_R/k) * ((1/(T-b) - (1/T_r))))
+N_OTR = simplify(gamma * P_OTR - (1- gamma)* R_OTR)
+Nb_OTR = simplify(gamma * P_OTR - (1- gamma)* Rb_OTR)
+
+N_OTR_appx = simplify(exp(taylor(ln(N_OTR),T,T_r,1)));
+latex(N_OTR_appx)
+
+Nb_OTR_appx = simplify(exp(taylor(ln(Nb_OTR),T,T_r,1)));
+
+latex(Nb_OTR_appx)
