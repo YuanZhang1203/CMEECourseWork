@@ -23,12 +23,44 @@ data <- data %>% mutate(Variable = case_when(originaltraitname %in% c("Developme
                                              originaltraitname %in% c("Juvenile survival","Juvenile survival ") ~ 'Juvenile Mortality Rate (zJ)',
                                              originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Fecundity Loss Rate (k)'))  #Fecundity loss rate
 
-dev <- subset(data,data$Variable=="Adult Mortality Rate (z)")
-dev <- gdata::drop.levels(dev)
+z <- subset(data,data$Variable=="Adult Mortality Rate (z)")
+z <- gdata::drop.levels(z)
 
-levels(dev$originaltraitunit)
-levels(dev$interactor1)
+levels(z$originaltraitunit)
+levels(z$interactor1order)
+levels(z$interactor1)
 
+## 1 "Coleoptera" 
+Coleoptera <- subset(z,z$interactor1order == "Coleoptera")
+Coleoptera <- gdata::drop.levels(Coleoptera)
+levels(Coleoptera$interactor1)
+
+# 1) "Anthonomus grandis"  
+grandis  <- subset(Coleoptera,Coleoptera$interactor1 == "Anthonomus grandis")
+grandis  <- gdata::drop.levels(grandis)
+levels(grandis$originaltraitunit)
+
+z1a <-  subset(grandis,grandis$originaltraitunit == "%"|grandis$originaltraitunit == "% of live weevils per day" )
+z1a  <- gdata::drop.levels(z1a)
+
+z1a$stdunit <- "%"
+z1a$stdvalue <- z1a$originaltraitvalue
+z1a$stdname  <- paste(unique(z1a$ambienttemp),"celcius")
+
+p15 <- ggplot(A15, aes(x = time, y = stdvalue))
+A1 <- p15 + geom_point() + geom_smooth()+
+  labs(title=expression(paste('Anthonomus grandis 15 (',~degree,'C)',sep='')), 
+       x = "Time (days)", 
+       y = "Fecundity (Eggs/female/day)")  
+  
+# 2) "Stethorus punctillum"
+
+
+## 2 "Diptera"    
+## 3 "Hemiptera"  
+## 4 "Hymenoptera" 
+## 5 "Prostigmata" 
+## 6 "Psocoptera" 
 
 ## Culex annulirostris
 z1 <- subset(dev,dev$interactor1=="Culex annulirostris")

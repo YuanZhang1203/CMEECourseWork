@@ -1,149 +1,149 @@
-"","Order","Species","Originalname","Trait","Unit","Unitdef","Stage","Temperature_Difference"
-"1","Diptera","Aedes aegypti","Mortality Rate","Adult Mortality Rate (z)","1/days","","Adult",TRUE
-"2","Diptera","Aedes aegypti","Mortality Rate","Adult Mortality Rate (z)","1/day","","Adult",TRUE
-"3","Diptera","Aedes aegypti","Oviposition Rate","Peak Fecundity Rate (bpk)","per day per female","","Adult",TRUE
-"4","Diptera","Aedes aegypti","Survival Time","Adult Mortality Rate (z)","days","","Adult",TRUE
-"5","Diptera","Aedes albopictus","Development Rate","Development Time (a)","1/days","","",TRUE
-"6","Diptera","Aedes albopictus","Oviposition Rate","Peak Fecundity Rate (bpk)","eggs per female per cycle","","",TRUE
-"7","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","Egg to L1",TRUE
-"8","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L1 to L2",TRUE
-"9","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L2 to L3",TRUE
-"10","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L3 to L4",TRUE
-"11","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L4 to Pupae",TRUE
-"12","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","Pupae to Adult",TRUE
-"13","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L1 to Adult",TRUE
-"14","Diptera","Aedes camptorhynchus","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to adult","larvae + pupae",TRUE
-"15","Diptera","Aedes camptorhynchus","Fecundity","Peak Fecundity Rate (bpk)","eggs","Eggs from individual female (dissected 7 days after blood meal)","adult",FALSE
-"16","Diptera","Aedes camptorhynchus","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","larvae + pupae",TRUE
-"17","Diptera","Aedes notoscriptus","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to pupae","larvae",TRUE
-"18","Diptera","Aedes notoscriptus","Juvenile survival ","Juvenile Mortality Rate (zJ)","days","Proportion of larvae that survive to pupation","larvae",TRUE
-"19","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Egg",TRUE
-"20","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Larvae",TRUE
-"21","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Pupae",TRUE
-"22","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","",TRUE
-"23","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Egg",TRUE
-"24","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","First Instar",TRUE
-"25","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Second Instar",TRUE
-"26","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Third Instar",TRUE
-"27","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","L1 - L3",TRUE
-"28","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Pupal",TRUE
-"29","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Pre-emergent Adult",TRUE
-"30","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Immature Stages",TRUE
-"31","Coleoptera","Anthonomus grandis","Fecundity","Peak Fecundity Rate (bpk)","Eggs/female/day","","",TRUE
-"32","Coleoptera","Anthonomus grandis","Longevity","Adult Mortality Rate (z)","days","","",TRUE
-"33","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Eggs",TRUE
-"34","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","First Instar",TRUE
-"35","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Second Instar",TRUE
-"36","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Third Instar",TRUE
-"37","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Larvae",TRUE
-"38","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","",TRUE
-"39","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Pupae",TRUE
-"40","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Pre-emergent adult",TRUE
-"41","Coleoptera","Anthonomus grandis","Survivorship","Adult Mortality Rate (z)","% of live weevils per day","","",TRUE
-"42","Hemiptera","Aphis gossypii","Development Rate","Development Time (a)","1/day","","",TRUE
-"43","Hemiptera","Aphis gossypii","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","",TRUE
-"44","Hemiptera","Aphis gossypii","Development Time","Development Time (a)","Days","","",TRUE
-"45","Hemiptera","Aphis gossypii","Fecundity Rate","Peak Fecundity Rate (bpk)","nymphs/female/day","","",TRUE
-"46","Hemiptera","Aphis gossypii","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult",TRUE
-"47","Hemiptera","Aphis gossypii","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE
-"48","Hemiptera","Aphis gossypii","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE
-"49","Hemiptera","Aphis gossypii","Mortality Rate","Adult Mortality Rate (z)","%","","Nymph",TRUE
-"50","Hemiptera","Aphis gossypii","Survival Rate","Adult Mortality Rate (z)","individuals/day","","",TRUE
-"51","Diptera","Bactrocera correcta","Development Time","Development Time (a)","hour / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE
-"52","Diptera","Bactrocera correcta","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE
-"53","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Egg",TRUE
-"54","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","1st instar",TRUE
-"55","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","2nd instar",TRUE
-"56","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","3rd instar",TRUE
-"57","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","4th instar",TRUE
-"58","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","5th instar",TRUE
-"59","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Nymph",TRUE
-"60","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Egg-to-adult",TRUE
-"61","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Egg",TRUE
-"62","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","1st instar",TRUE
-"63","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","2nd instar",TRUE
-"64","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","3rd instar",TRUE
-"65","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","4th instar",TRUE
-"66","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","5th instar",TRUE
-"67","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Egg-to-adult",TRUE
-"68","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Nymph",TRUE
-"69","Hemiptera","Corythucha ciliata","Fecundity","Peak Fecundity Rate (bpk)","eggs per female","","",TRUE
-"70","Hemiptera","Corythucha ciliata","Longevity","Adult Mortality Rate (z)","days","","",TRUE
-"71","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","Egg",TRUE
-"72","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","1st instar",TRUE
-"73","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","2nd instar",TRUE
-"74","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","3rd instar",TRUE
-"75","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","4th instar",TRUE
-"76","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","5th instar",TRUE
-"77","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","Egg-to-adult",TRUE
-"78","Diptera","Culex annulirostris","Adult longevity (female, bloodfed)","Adult Mortality Rate (z)","days","Length of adult lifespan (female, bloodfed)","adult",TRUE
-"79","Diptera","Culex annulirostris","Adult longevity (male)","Adult Mortality Rate (z)","days","Length of adult lifespan (male)","adult",TRUE
-"80","Diptera","Culex annulirostris","Adult survival","Adult Mortality Rate (z)","1/day","Estimated daily survival rate (proportion parous raised to power of 1/gonotrophic cycle)","adult",FALSE
-"81","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to adult emergence: 0.57 for 20C)","adult",TRUE
-"82","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.65 for 25C)","adult",TRUE
-"83","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.56 for 30C)","adult",TRUE
-"84","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to adult emergence: 0.57 for 20C)","adult",TRUE
-"85","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.65 for 25C)","adult",TRUE
-"86","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.56 for 30C)","adult",TRUE
-"87","Diptera","Culex annulirostris","Development time","Development Time (a)","days","Time to develop from oviposition to adult","egg + larvae + pupae",TRUE
-"88","Diptera","Culex annulirostris","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to adult","larvae + pupae",TRUE
-"89","Diptera","Culex annulirostris","Egg development time","Development Time (a)","days","Time from oviposition to hatching","egg",TRUE
-"90","Diptera","Culex annulirostris","Fecundity","Peak Fecundity Rate (bpk)","eggs per female per day","Eggs per female per day","adult",TRUE
-"91","Diptera","Culex annulirostris","Juvenile survival","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood (from observed age distributions)","larvae + pupae",FALSE
-"92","Diptera","Culex annulirostris","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","larvae + pupae",TRUE
-"93","Diptera","Culex annulirostris","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","egg + larvae + pupae",TRUE
-"94","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE
-"95","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE
-"96","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE
-"97","Hymenoptera","Euplectrus ronnai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE
-"98","Hymenoptera","Euplectrus ronnai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE
-"99","Hymenoptera","Euplectrus ronnai","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE
-"100","Hymenoptera","Glyptapanteles muesebecki","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE
-"101","Hymenoptera","Glyptapanteles muesebecki","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE
-"102","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","",TRUE
-"103","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","1st instar",TRUE
-"104","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","2nd instar",TRUE
-"105","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","3rd instar",TRUE
-"106","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","4th instar",TRUE
-"107","Psocoptera","Lepinotus reticulatus","Survivorship","Adult Mortality Rate (z)","individuals/day","proportion of nymphs surviving to adults","",TRUE
-"108","Hymenoptera","Macrocentrus iridescens","Development Rate","Development Time (a)","event / (1 individual * 24 hour)","Rate at which an individual completes development of one or more life stages","juvenile",TRUE
-"109","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","nymph (female)",TRUE
-"110","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg (female)",TRUE
-"111","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","nymph (male)",TRUE
-"112","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg (male)",TRUE
-"113","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pre-pupae (male)",TRUE
-"114","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae (male)",TRUE
-"115","Hemiptera","Planococcus citri","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult",TRUE
-"116","Hemiptera","Planococcus citri","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE
-"117","Hemiptera","Planococcus citri","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (male)",TRUE
-"118","Coleoptera","Sitona discoideus","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE
-"119","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","Egg",TRUE
-"120","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","1st instar",TRUE
-"121","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","2nd instar",TRUE
-"122","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","3rd instar",TRUE
-"123","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","4th instar",TRUE
-"124","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","Pupae",TRUE
-"125","Coleoptera","Stethorus punctillum","Percentage Survival","Adult Mortality Rate (z)","%","","",TRUE
-"126","Hymenoptera","Telenomus chrysopae","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE
-"127","Hymenoptera","Telenomus chrysopae","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","larvae",TRUE
-"128","Hymenoptera","Telenomus isis","Development Rate","Development Time (a)","event / (1 individual * 24 hour)","Rate at which an individual completes development of one or more life stages","juvenile",TRUE
-"129","Hymenoptera","Telenomus isis","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE
-"130","Hymenoptera","Telenomus isis","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE
-"131","Hymenoptera","Telenomus lobatus","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE
-"132","Hymenoptera","Telenomus lobatus","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","larvae",TRUE
-"133","Hemiptera","Tetraneura nigri abdominalis","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE
-"134","Hemiptera","Tetraneura nigri abdominalis","Fecundity Rate","Peak Fecundity Rate (bpk)","event / (1 individual * 24 hour)","Number of offspring produced by a female per time","adult (female)",TRUE
-"135","Hemiptera","Tetraneura nigri abdominalis","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult (female)",TRUE
-"136","Hemiptera","Tetraneura nigri abdominalis","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE
-"137","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Egg",TRUE
-"138","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Larvae",TRUE
-"139","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Protonymph",TRUE
-"140","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Deutonymph",TRUE
-"141","Prostigmata","Tetranychus mcdanieli","Percentage Survival","Adult Mortality Rate (z)","%","","",TRUE
-"142","Hymenoptera","Theocolax elegans","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile (female)",TRUE
-"143","Hymenoptera","Theocolax elegans","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile (male)",TRUE
-"144","Hymenoptera","Theocolax elegans","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE
-"145","Hymenoptera","Theocolax elegans","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (male)",TRUE
-"146","Hymenoptera","Trichogramma bruni","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE
-"147","Hymenoptera","Trichogramma sp. nr. Lutea","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE
-"148","Hymenoptera","Trichogramma sp. nr. Mwanzai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE
+"","Order","Species","Originalname","Trait","Unit","Unitdef","Stage","Temperature_Difference","habitat","labfield","How_acclimated"
+"1","Diptera","Aedes aegypti","Mortality Rate","Adult Mortality Rate (z)","1/days","","Adult",TRUE,NA,NA,NA
+"2","Diptera","Aedes aegypti","Mortality Rate","Adult Mortality Rate (z)","1/day","","Adult",TRUE,NA,NA,NA
+"3","Diptera","Aedes aegypti","Oviposition Rate","Peak Fecundity Rate (bpk)","per day per female","","Adult",TRUE,NA,NA,NA
+"4","Diptera","Aedes aegypti","Survival Time","Adult Mortality Rate (z)","days","","Adult",TRUE,NA,NA,NA
+"5","Diptera","Aedes albopictus","Development Rate","Development Time (a)","1/days","","",TRUE,NA,NA,NA
+"6","Diptera","Aedes albopictus","Oviposition Rate","Peak Fecundity Rate (bpk)","eggs per female per cycle","","",TRUE,NA,NA,NA
+"7","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","Egg to L1",TRUE,NA,NA,NA
+"8","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L1 to L2",TRUE,NA,NA,NA
+"9","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L2 to L3",TRUE,NA,NA,NA
+"10","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L3 to L4",TRUE,NA,NA,NA
+"11","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L4 to Pupae",TRUE,NA,NA,NA
+"12","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","Pupae to Adult",TRUE,NA,NA,NA
+"13","Diptera","Aedes albopictus","Percentage Survival","Adult Mortality Rate (z)","%","","L1 to Adult",TRUE,NA,NA,NA
+"14","Diptera","Aedes camptorhynchus","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to adult","larvae + pupae",TRUE,"","Lab",""
+"15","Diptera","Aedes camptorhynchus","Fecundity","Peak Fecundity Rate (bpk)","eggs","Eggs from individual female (dissected 7 days after blood meal)","adult",FALSE,"","Lab",""
+"16","Diptera","Aedes camptorhynchus","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","larvae + pupae",TRUE,"","Lab",""
+"17","Diptera","Aedes notoscriptus","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to pupae","larvae",TRUE,"","Lab",""
+"18","Diptera","Aedes notoscriptus","Juvenile survival ","Juvenile Mortality Rate (zJ)","days","Proportion of larvae that survive to pupation","larvae",TRUE,"","Lab",""
+"19","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Egg",TRUE,NA,NA,NA
+"20","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Larvae",TRUE,NA,NA,NA
+"21","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","Pupae",TRUE,NA,NA,NA
+"22","Coleoptera","Anthonomus grandis","Development Rate","Development Time (a)","%","","",TRUE,NA,NA,NA
+"23","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Egg",TRUE,NA,NA,NA
+"24","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","First Instar",TRUE,NA,NA,NA
+"25","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Second Instar",TRUE,NA,NA,NA
+"26","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Third Instar",TRUE,NA,NA,NA
+"27","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","L1 - L3",TRUE,NA,NA,NA
+"28","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Pupal",TRUE,NA,NA,NA
+"29","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Pre-emergent Adult",TRUE,NA,NA,NA
+"30","Coleoptera","Anthonomus grandis","Development Time","Development Time (a)","days","","Immature Stages",TRUE,NA,NA,NA
+"31","Coleoptera","Anthonomus grandis","Fecundity","Peak Fecundity Rate (bpk)","Eggs/female/day","","",TRUE,NA,NA,NA
+"32","Coleoptera","Anthonomus grandis","Longevity","Adult Mortality Rate (z)","days","","",TRUE,NA,NA,NA
+"33","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Eggs",TRUE,NA,NA,NA
+"34","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","First Instar",TRUE,NA,NA,NA
+"35","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Second Instar",TRUE,NA,NA,NA
+"36","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Third Instar",TRUE,NA,NA,NA
+"37","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Larvae",TRUE,NA,NA,NA
+"38","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","",TRUE,NA,NA,NA
+"39","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Pupae",TRUE,NA,NA,NA
+"40","Coleoptera","Anthonomus grandis","Mortality Rate","Adult Mortality Rate (z)","%","","Pre-emergent adult",TRUE,NA,NA,NA
+"41","Coleoptera","Anthonomus grandis","Survivorship","Adult Mortality Rate (z)","% of live weevils per day","","",TRUE,NA,NA,NA
+"42","Hemiptera","Aphis gossypii","Development Rate","Development Time (a)","1/day","","",TRUE,NA,NA,NA
+"43","Hemiptera","Aphis gossypii","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"44","Hemiptera","Aphis gossypii","Development Time","Development Time (a)","Days","","",TRUE,NA,NA,NA
+"45","Hemiptera","Aphis gossypii","Fecundity Rate","Peak Fecundity Rate (bpk)","nymphs/female/day","","",TRUE,NA,NA,NA
+"46","Hemiptera","Aphis gossypii","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"47","Hemiptera","Aphis gossypii","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"48","Hemiptera","Aphis gossypii","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"49","Hemiptera","Aphis gossypii","Mortality Rate","Adult Mortality Rate (z)","%","","Nymph",TRUE,NA,NA,NA
+"50","Hemiptera","Aphis gossypii","Survival Rate","Adult Mortality Rate (z)","individuals/day","","",TRUE,NA,NA,NA
+"51","Diptera","Bactrocera correcta","Development Time","Development Time (a)","hour / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"52","Diptera","Bactrocera correcta","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"53","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Egg",TRUE,NA,NA,NA
+"54","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","1st instar",TRUE,NA,NA,NA
+"55","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","2nd instar",TRUE,NA,NA,NA
+"56","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","3rd instar",TRUE,NA,NA,NA
+"57","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","4th instar",TRUE,NA,NA,NA
+"58","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","5th instar",TRUE,NA,NA,NA
+"59","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Nymph",TRUE,NA,NA,NA
+"60","Hemiptera","Corythucha ciliata","Development Rate","Development Time (a)","100/day","","Egg-to-adult",TRUE,NA,NA,NA
+"61","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Egg",TRUE,NA,NA,NA
+"62","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","1st instar",TRUE,NA,NA,NA
+"63","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","2nd instar",TRUE,NA,NA,NA
+"64","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","3rd instar",TRUE,NA,NA,NA
+"65","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","4th instar",TRUE,NA,NA,NA
+"66","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","5th instar",TRUE,NA,NA,NA
+"67","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Egg-to-adult",TRUE,NA,NA,NA
+"68","Hemiptera","Corythucha ciliata","Development Time","Development Time (a)","days","","Nymph",TRUE,NA,NA,NA
+"69","Hemiptera","Corythucha ciliata","Fecundity","Peak Fecundity Rate (bpk)","eggs per female","","",TRUE,NA,NA,NA
+"70","Hemiptera","Corythucha ciliata","Longevity","Adult Mortality Rate (z)","days","","",TRUE,NA,NA,NA
+"71","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","Egg",TRUE,NA,NA,NA
+"72","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","1st instar",TRUE,NA,NA,NA
+"73","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","2nd instar",TRUE,NA,NA,NA
+"74","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","3rd instar",TRUE,NA,NA,NA
+"75","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","4th instar",TRUE,NA,NA,NA
+"76","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","5th instar",TRUE,NA,NA,NA
+"77","Hemiptera","Corythucha ciliata","Percentage Survival","Adult Mortality Rate (z)","%","","Egg-to-adult",TRUE,NA,NA,NA
+"78","Diptera","Culex annulirostris","Adult longevity (female, bloodfed)","Adult Mortality Rate (z)","days","Length of adult lifespan (female, bloodfed)","adult",TRUE,"","Lab",""
+"79","Diptera","Culex annulirostris","Adult longevity (male)","Adult Mortality Rate (z)","days","Length of adult lifespan (male)","adult",TRUE,"","Lab",""
+"80","Diptera","Culex annulirostris","Adult survival","Adult Mortality Rate (z)","1/day","Estimated daily survival rate (proportion parous raised to power of 1/gonotrophic cycle)","adult",FALSE,"","Field",""
+"81","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to adult emergence: 0.57 for 20C)","adult",TRUE,"","Lab",""
+"82","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.65 for 25C)","adult",TRUE,"","Lab",""
+"83","Diptera","Culex annulirostris","Adult survival (female, bloodfed)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.56 for 30C)","adult",TRUE,"","Lab",""
+"84","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to adult emergence: 0.57 for 20C)","adult",TRUE,"","Lab",""
+"85","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.65 for 25C)","adult",TRUE,"","Lab",""
+"86","Diptera","Culex annulirostris","Adult survival (male)","Adult Mortality Rate (z)","proportion","Proportion surviving (max = prop. surviving from pupation to emergence: 0.56 for 30C)","adult",TRUE,"","Lab",""
+"87","Diptera","Culex annulirostris","Development time","Development Time (a)","days","Time to develop from oviposition to adult","egg + larvae + pupae",TRUE,"","Lab",""
+"88","Diptera","Culex annulirostris","Development time","Development Time (a)","days","Time to develop from 1st instar larvae to adult","larvae + pupae",TRUE,"","Field",""
+"89","Diptera","Culex annulirostris","Egg development time","Development Time (a)","days","Time from oviposition to hatching","egg",TRUE,"","Lab",""
+"90","Diptera","Culex annulirostris","Fecundity","Peak Fecundity Rate (bpk)","eggs per female per day","Eggs per female per day","adult",TRUE,"","Lab",""
+"91","Diptera","Culex annulirostris","Juvenile survival","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood (from observed age distributions)","larvae + pupae",FALSE,"","Field",""
+"92","Diptera","Culex annulirostris","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","larvae + pupae",TRUE,"","Lab",""
+"93","Diptera","Culex annulirostris","Juvenile survival ","Juvenile Mortality Rate (zJ)","proportion","Proportion of larvae that survive to adulthood","egg + larvae + pupae",TRUE,"","Field",""
+"94","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"95","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"96","Lepidoptera","Cydia pomonella","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"97","Hymenoptera","Euplectrus ronnai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE,"terrestrial","lab",""
+"98","Hymenoptera","Euplectrus ronnai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE,"terrestrial","lab",""
+"99","Hymenoptera","Euplectrus ronnai","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE,"terrestrial","lab",""
+"100","Hymenoptera","Glyptapanteles muesebecki","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"101","Hymenoptera","Glyptapanteles muesebecki","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"102","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","",TRUE,NA,NA,NA
+"103","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","1st instar",TRUE,NA,NA,NA
+"104","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","2nd instar",TRUE,NA,NA,NA
+"105","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","3rd instar",TRUE,NA,NA,NA
+"106","Psocoptera","Lepinotus reticulatus","Development Time","Development Time (a)","days","","4th instar",TRUE,NA,NA,NA
+"107","Psocoptera","Lepinotus reticulatus","Survivorship","Adult Mortality Rate (z)","individuals/day","proportion of nymphs surviving to adults","",TRUE,NA,NA,NA
+"108","Hymenoptera","Macrocentrus iridescens","Development Rate","Development Time (a)","event / (1 individual * 24 hour)","Rate at which an individual completes development of one or more life stages","juvenile",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"109","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","nymph (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"110","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"111","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","nymph (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"112","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"113","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pre-pupae (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"114","Hemiptera","Planococcus citri","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","pupae (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"115","Hemiptera","Planococcus citri","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"116","Hemiptera","Planococcus citri","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"117","Hemiptera","Planococcus citri","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"118","Coleoptera","Sitona discoideus","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","egg",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"119","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","Egg",TRUE,NA,NA,NA
+"120","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","1st instar",TRUE,NA,NA,NA
+"121","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","2nd instar",TRUE,NA,NA,NA
+"122","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","3rd instar",TRUE,NA,NA,NA
+"123","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","4th instar",TRUE,NA,NA,NA
+"124","Coleoptera","Stethorus punctillum","Development Rate","Development Time (a)","1/day","","Pupae",TRUE,NA,NA,NA
+"125","Coleoptera","Stethorus punctillum","Percentage Survival","Adult Mortality Rate (z)","%","","",TRUE,NA,NA,NA
+"126","Hymenoptera","Telenomus chrysopae","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"127","Hymenoptera","Telenomus chrysopae","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","larvae",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"128","Hymenoptera","Telenomus isis","Development Rate","Development Time (a)","event / (1 individual * 24 hour)","Rate at which an individual completes development of one or more life stages","juvenile",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"129","Hymenoptera","Telenomus isis","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"130","Hymenoptera","Telenomus isis","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","juvenile",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"131","Hymenoptera","Telenomus lobatus","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","larvae",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"132","Hymenoptera","Telenomus lobatus","Mortality Rate","Adult Mortality Rate (z)","event / (1 individual * 24 hour)","Number of deaths scaled by population size, per unit time","larvae",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"133","Hemiptera","Tetraneura nigri abdominalis","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"134","Hemiptera","Tetraneura nigri abdominalis","Fecundity Rate","Peak Fecundity Rate (bpk)","event / (1 individual * 24 hour)","Number of offspring produced by a female per time","adult (female)",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"135","Hemiptera","Tetraneura nigri abdominalis","Generation Time","Development Time (a)","day / 1 individual","Average interval between the birth of an individual and the birth of its offspring","adult (female)",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"136","Hemiptera","Tetraneura nigri abdominalis","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"137","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Egg",TRUE,NA,NA,NA
+"138","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Larvae",TRUE,NA,NA,NA
+"139","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Protonymph",TRUE,NA,NA,NA
+"140","Prostigmata","Tetranychus mcdanieli","Development Rate","Development Time (a)","1/day","","Deutonymph",TRUE,NA,NA,NA
+"141","Prostigmata","Tetranychus mcdanieli","Percentage Survival","Adult Mortality Rate (z)","%","","",TRUE,NA,NA,NA
+"142","Hymenoptera","Theocolax elegans","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile (female)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"143","Hymenoptera","Theocolax elegans","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile (male)",TRUE,"terrestrial","lab","captive bred (at acclimation temperature)"
+"144","Hymenoptera","Theocolax elegans","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (female)",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"145","Hymenoptera","Theocolax elegans","Longevity","Adult Mortality Rate (z)","day / 1 individual","Length of adult life","adult (male)",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"146","Hymenoptera","Trichogramma bruni","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"147","Hymenoptera","Trichogramma sp. nr. Lutea","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE,"terrestrial","lab","captive bred (at test temperature)"
+"148","Hymenoptera","Trichogramma sp. nr. Mwanzai","Development Time","Development Time (a)","day / 1 individual","Time taken by an individual to complete a particular period or life stage","juvenile",TRUE,"terrestrial","lab","captive bred (at test temperature)"

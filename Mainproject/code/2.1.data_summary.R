@@ -25,7 +25,7 @@ data <- data %>% mutate(Variable = case_when(originaltraitname %in% c("Developme
 
 # write a loop to summary data
 species <- levels(data$interactor1)
-summary <- data.frame(Order=vector(),Species=vector(),Originalname = vector(),Trait = vector(), Unit=vector(),Unitdef=vector(),Stage=vector(),Temperature_Difference=vector())
+summary <- data.frame(Order=vector(),Species=vector(),Originalname = vector(),Trait = vector(), Unit=vector(),Unitdef=vector(),Stage=vector(),Temperature_Difference=vector(), habitat= vector(), labfield = vector(), How_acclimated = vector())
 
 for(i in 1:length(species)){
   spsub <- subset(data, data$interactor1==species[i])
@@ -35,7 +35,7 @@ for(i in 1:length(species)){
   for(j in 1:length(Factor)){
     sub <- subset(spsub,spsub$originaltraitname==Factor[j])
     sub<-gdata::drop.levels(sub)
-    df<- data.frame(Order=sub$interactor1order[1], Species=sub$interactor1[1],Originalname = sub$originaltraitname[1], Trait = unique(sub$Variable), Unit=unique(sub$originaltraitunit), Unitdef=unique(sub$originaltraitdef),Stage=unique(sub$interactor1stage),Temperature_Difference=if(length(unique(sub$ambienttemp))>1)TRUE else FALSE)
+    df<- data.frame(Order=sub$interactor1order[1], Species=sub$interactor1[1],Originalname = sub$originaltraitname[1], Trait = unique(sub$Variable), Unit=unique(sub$originaltraitunit), Unitdef=unique(sub$originaltraitdef),Stage=unique(sub$interactor1stage),Temperature_Difference=if(length(unique(sub$ambienttemp))>1)TRUE else FALSE, habitat = unique(sub$habitat), labfield =unique(sub$labfield), How_acclimated = unique(sub$interactor1acc))
     summary<-rbind(summary,df)
   }
   

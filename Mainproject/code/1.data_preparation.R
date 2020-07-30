@@ -59,7 +59,7 @@ data<- rbind(subdata,cera) # combine them
 write.csv(data, file="../data/Fulldataset.csv")
 levels(data$originaltraitname)
 
-subset <- subset(data,data$originaltraitname %in% c("Adult longevity (female, bloodfed)", "Adult longevity (male)","Adult survival","Adult survival (female, bloodfed)","Adult survival (male)", "Development Rate", "Development Time", "Development time", "Fecundity","Fecundity Rate","Generation Time", "Juvenile survival","Juvenile survival ","Longevity","Mortality Rate","Oviposition Rate", "Percentage Survival", "Survival Rate","Survivorship", "Survival Time","Egg development time"))
+subset <- subset(data,data$originaltraitname %in% c("Adult longevity (female, bloodfed)", "Adult longevity (male)","Adult survival","Adult survival (female, bloodfed)","Adult survival (male)", "Development Rate", "Development Time", "Development time", "Fecundity","Fecundity Rate","Generation Time", "Juvenile survival","Juvenile survival ","Longevity","Mortality Rate","Oviposition Rate", "Percentage Survival", "Survival Rate","Survivorship", "Survival Time","Egg development time", "habitat"))
 subset<- gdata::drop.levels(subset)
 
 levels(subset$originaltraitname)
