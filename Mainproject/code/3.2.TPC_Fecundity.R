@@ -37,6 +37,7 @@ levels(fecund$interactor1)
 Cole <- subset(fecund, fecund$interactor1order =="Coleoptera")
 Cole <- gdata::drop.levels(Cole)
 levels(Cole$interactor1)
+
 # 1) only one species : "Anthonomus grandis"
 # check units
 levels(Cole$originaltraitunit) # only one unit: "Eggs/female/day

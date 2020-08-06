@@ -7,78 +7,85 @@
 #################################################
 
 rm(list = ls())
+graphics.off()
 
 library("dplyr")
 library("ggplot2")
 library("gridExtra")
 library("ggforce")
 library("pdftools")
-data <- read.csv("../Data/TraitofInterest.csv")
+data <- read.csv("../data/simple.csv")
+
+zj<- subset(data,data$Variable=="Juvenile Mortality Rate (zJ)")
+zj <- gdata::drop.levels(zj)
+
+levels(zj$unit) # "days"; "proportion"(delete, as no time information)
+
+# "Aedes notoscriptus" ### only one species
+zj1<- subset(zj,zj$unit=="days")
+zj1 <- gdata::drop.levels(zj1)
+levels(zj1$species)
+zj1 <- subset(zj,zj$species =="Aedes notoscriptus")
+zj1 <- gdata::drop.levels(zj1)
+
+zj1$stdvalue <- 1/zj1$traitvalue
+
+zj1 <- ggplot(zj1, aes(x=temp, y = stdvalue)) 
+zj1 <- zj1 + geom_point() + geom_smooth()+
+  labs(title = "Juvenlie Mortality Rate: Aedes notoscriptus", 
+       x = "Temperature (\u00B0C) ", 
+       y = "Juvenlie Mortality Rate (1/day)")  
+ggsave("../results/TPC_zj1.pdf", plot=zj1)
+
+
+# other data in the adult mortality rate dataset (stage = Juvenile)
+z <-  subset(data, data$Variable == "Adult Mortality Rate (z)")
+z <- gdata::drop.levels(z)
+z <- z %>% mutate(stagetype = case_when(stage %in% c("", "adult", "Adult", "adult (female)", "adult (male)", "Egg-to-adult") ~ 'adult',
+                                        stage %in% c("Juvenile", "larvae", "Larvae", "larvae + pupae", "Egg to L1", "L1 to L2", "L2 to L3", "L3 to L4", "L4 to Pupae","Pupae to Adult" ) ~ 'Juvenile'))
+
+zj_other <- subset(z,z$stagetype ==  "Juvenile") 
+zj_other<- gdata::drop.levels(zj_other) 
+levels(zj_other$unit) # "%"(delete, as no time information);  "event / (1 individual * 24 hour)"
+
+j <- subset(zj_other,zj_other$unit ==  "event / (1 individual * 24 hour)") 
+j <- gdata::drop.levels(j)
+
+levels(j$species)
+
+# 2 "Telenomus chrysopae" 
+zj2 <- subset(j, j$species == "Telenomus chrysopae")
+zj2 <- gdata::drop.levels(zj2)
+
+zj2$stdvalue <- zj2$traitvalue
+
+zj2 <- ggplot(zj2, aes(x=temp, y = stdvalue)) 
+zj2 <- zj2 + geom_point() + geom_smooth()+
+  labs(title = "Juvenlie Mortality Rate: Telenomus chrysopae", 
+       x = "Temperature (\u00B0C) ", 
+       y = "Juvenlie Mortality Rate (1/day)")  
+ggsave("../results/TPC_zj2.pdf", plot=zj2)
+
+
+# 3 "Telenomus lobatus"  
+zj3 <- subset(j, j$species == "Telenomus lobatus")
+zj3 <- gdata::drop.levels(zj3)
+
+zj3$stdvalue <- zj3$traitvalue
+
+zj3 <- ggplot(zj3, aes(x=temp, y = stdvalue)) 
+zj3 <- zj3 + geom_point() + geom_smooth()+
+  labs(title = "Juvenlie Mortality Rate: Telenomus lobatus", 
+       x = "Temperature (\u00B0C) ", 
+       y = "Juvenlie Mortality Rate (1/day)")  
+ggsave("../results/TPC_zj3.pdf", plot=zj3)
+
+
+#### combine
+pdf_combine(c("../results/TPC_zj1.pdf", "../results/TPC_zj2.pdf", "../results/TPC_zj3.pdf"), 
+            output = "../results/3.4.TPC_Juvenlie_Mortality_Rate.pdf")
 
 
 
-data <- data %>% mutate(Variable = case_when(originaltraitname %in% c("Development Rate", "Development Time", "Development time","Generation Time","Egg development time") ~ 'Development Time (a)',
-                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Peak Fecundity Rate (bpk)',
-                                             originaltraitname %in% c("Adult longevity (female, bloodfed)", "Adult longevity (male)","Adult survival","Adult survival (female, bloodfed)", "Adult survival (male)", "Longevity","Mortality Rate","Percentage Survival","Survival Rate","Survivorship", "Survival Time") ~ 'Adult Mortality Rate (z)',
-                                             originaltraitname %in% c("Juvenile survival","Juvenile survival ") ~ 'Juvenile Mortality Rate (zJ)',
-                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Fecundity Loss Rate (k)'))  #Fecundity loss rate
-
-
-dev <- subset(data,data$Variable=="Juvenile Mortality Rate (zJ)")
-dev <- gdata::drop.levels(dev)
-
-levels(dev$originaltraitunit)
-levels(dev$interactor1)
-
-# Aedes camptorhynchus
-sp1 <- subset(dev,dev$interactor1=="Aedes camptorhynchus")
-sp1 <- gdata::drop.levels(sp1)
-
-levels(sp1$originaltraitunit)
-
-sp1$stdvalue <- sp1$originaltraitvalue
-sp1$stdunit <- "Days"
-sp1$stdname <- sp1$interactor1
-
-## Aedes notoscriptus
-
-sp2 <- subset(dev,dev$interactor1=="Aedes notoscriptus")
-sp2 <- gdata::drop.levels(sp2)
-
-levels(sp2$originaltraitunit)
-levels(sp2$interactor1stage)
-levels(sp2$originaltraitdef)
-
-sp2$stdvalue <- sp2$originaltraitvalue
-sp2$stdunit <- "Days"
-sp2$stdname <- paste(sp2$interactor1, "-", sp2$interactor1stage)
-
-## Culex annulirostris
-sp3 <- subset(dev,dev$interactor1=="Culex annulirostris")
-sp3 <- gdata::drop.levels(sp3)
-
-levels(sp3$originaltraitunit)
-
-sp3$stdvalue <- sp3$originaltraitvalue
-sp3$stdunit <- "Days"
-sp3$stdname <- sp3$interactor1
-
-
-## check 
-ncol(sp1)
-ncol(sp2)
-ncol(sp3)
-
-## combine the coclumn
-zj <- rbind(sp1,sp2,sp3)
-
-str(zj)
-
-## plot
-zjTPC <- ggplot(zj, aes(x=ambienttemp, y=stdvalue)) + geom_point() + theme_bw() + labs(title=expression(paste("Juvenlie Mortality Rate", (zJ))), x=expression(paste('Temperature (',~degree,'C)',sep='')), y="Juvenlie Mortality Rate") + theme(plot.title = element_text(hjust = 0.5)) + xlim(0,40) + ylim(0,120) 
-
-plot1 <- zjTPC + facet_wrap_paginate(~stdname, ncol=2, nrow=2, page=1, labeller = label_wrap_gen(30)) +  theme(strip.text.x = element_text(size = 10))
-
-ggsave("../results/3.4.TPC_Juvenlie_Mortality_Rate.pdf", plot=plot1)
 
 
