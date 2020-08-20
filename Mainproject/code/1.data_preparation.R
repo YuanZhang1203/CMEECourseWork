@@ -77,13 +77,14 @@ write.csv(subset,file="../data/TraitofInterest.csv")
 
 simple <- data.frame(ID= subset$originalid, order = subset$interactor1order, species = subset$interactor1, stage = subset$interactor1stage, originaltraitname = subset$originaltraitname, traitvalue = subset$originaltraitvalue, unit = subset$originaltraitunit,temp = subset$ambienttemp, time = subset$timestart, location = subset$location, longitude = subset$longitude, latitude = subset$latitude, study = subset$citation, stringsAsFactors = FALSE)
 
-simple <- simple %>% mutate(Variable = case_when(originaltraitname %in% c("Development Rate", "Development Time", "Development time","Generation Time","Egg development time") ~ 'Development Time (a)',
-                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Peak Fecundity Rate (bpk)',
+simple <- simple %>% mutate(Variable = case_when(originaltraitname %in% c("Development Rate", "Development Time", "Development time","Generation Time") ~ 'Development Time (a)',
+                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Fecundity',
                                              originaltraitname %in% c("Adult longevity (female, bloodfed)", "Adult longevity (male)","Adult survival","Adult survival (female, bloodfed)", "Adult survival (male)", "Longevity","Mortality Rate","Percentage Survival","Survival Rate","Survivorship", "Survival Time") ~ 'Adult Mortality Rate (z)',
                                              originaltraitname %in% c("Juvenile survival","Juvenile survival ") ~ 'Juvenile Mortality Rate (zJ)'))
 
 
 write.csv(simple,file="../data/simple.csv")
+
 
 
 

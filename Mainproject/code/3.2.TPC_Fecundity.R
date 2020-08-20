@@ -10,39 +10,79 @@
 rm(list = ls())
 graphics.off()
 
+#--------- Load some packages --------#
 library("dplyr")
 library("ggplot2")
 library("gridExtra")
 library("ggforce")
 library("pdftools")
+library("ggpubr")
 
-data <- read.csv("../Data/TraitofInterest.csv")
+#--------- Load dataset and check levels --------#
+data <- read.csv("../data/simple.csv")
+
+b <- subset(data, data$Variable == "Fecundity")
+b <- gdata::drop.levels(b)
+
+unique((b$species))
+#-----------------------------------------------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------------------------------------------#
+
+# "Tetraneura nigri abdominalis" 
+# "Aedes camptorhynchus"      
+# "Culex annulirostris"         
+# "Aedes aegypti"               
+# "Aphis gossypii"               
+# "Corythucha ciliata"          
+# "Aedes albopictus"             
 
 
-data <- data %>% mutate(Variable = case_when(originaltraitname %in% c("Development Rate", "Development Time", "Development time","Generation Time","Egg development time") ~ 'Development Time (a)',
-                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Peak Fecundity Rate (bpk)',
-                                             originaltraitname %in% c("Adult longevity (female, bloodfed)", "Adult longevity (male)","Adult survival","Adult survival (female, bloodfed)", "Adult survival (male)", "Longevity","Mortality Rate","Percentage Survival","Survival Rate","Survivorship", "Survival Time") ~ 'Adult Mortality Rate (z)',
-                                             originaltraitname %in% c("Juvenile survival","Juvenile survival ") ~ 'Juvenile Mortality Rate (zJ)',
-                                             originaltraitname %in% c("Fecundity","Fecundity Rate", "Oviposition Rate") ~ 'Fecundity Loss Rate (k)'))  #Fecundity loss rate
+## "Coleoptera" ## 
+# 1. only one species : "Anthonomus grandis"
+b1 <- subset(b, b$species == "Anthonomus grandis")
+b1 <- gdata::drop.levels(b1)
+b1$stdvalue <- b1$traitvalue
+b1$logvalue <- log(b1$stdvalue)
 
-fecund <- subset(data,data$Variable=="Peak Fecundity Rate (bpk)")
-fecund <- gdata::drop.levels(fecund)
-
-levels(fecund$originaltraitunit)
-levels(fecund$interactor1order)
-levels(fecund$interactor1)
-
-
-## 1"Coleoptera"
-Cole <- subset(fecund, fecund$interactor1order =="Coleoptera")
-Cole <- gdata::drop.levels(Cole)
-levels(Cole$interactor1)
-
-# 1) only one species : "Anthonomus grandis"
 # check units
-levels(Cole$originaltraitunit) # only one unit: "Eggs/female/day
-Ant <- Cole
-unique(Ant$ambienttemp) # get temperature ranges: 15 20 25 30 35
+unique(b1$unit) # "Eggs/female/day"
+
+# plot b ~ t
+bpk1 <- c()
+k1 <- c()
+temp1 <- unique(b1$temp)  # get temperature ranges: 15 20 25 30 35
+
+for (i in 1: length(temp1)) {
+  df <- b1[which(b1$temp == temp1[i]),]
+  bpk1[i] = max(df$traitvalue)
+  
+  df$stdvalue <- df$traitvalue
+  pbt <- ggplot(df, aes(x = time, y = stdvalue))+ geom_point() + geom_smooth()+
+          labs(title = paste("Anthonomus grandis",temp1[i],"(\u00B0C)",sep = "" ),
+          x = "Time (days)", 
+          y = "Fecundity (Eggs/female/day)")+ 
+          theme(plot.title = element_text(hjust = 0.5,size = 10, face = "bold.italic"),
+             axis.text=element_text(size=8,face = "bold"),
+             axis.title.x=element_text(size= 10),
+             axis.title.y=element_text(size= 10))
+  ggsave(paste("../Results/bt_1.Anthonomus grandis:", temp1[i], ":.png",sep = ""), device = png())
+  lm <- lm(logvalue ~ time, data = df)
+  k1[1] <- coef(lm)[2]
+}
+bpk1 <- data.frame(bpk1, temp1, k1)
+
+pbpk1< ggplot(bpk1, aes(x = temp1, y = bpk1))+ geom_point() + geom_smooth()+
+  labs(title = paste("Anthonomus grandis",te,"(\u00B0C)",sep = "" ),
+       x = "Time (days)", 
+       y = "Fecundity (Eggs/female/day)")+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 10, face = "bold.italic"),
+        axis.text=element_text(size=8,face = "bold"),
+        axis.title.x=element_text(size= 10),
+        axis.title.y=element_text(size= 10))
+ggsave(paste("../Results/bt_1.Anthonomus grandis:", temp1[i], ":.png",sep = ""), device = png())
+
+
 # A15 
 A15 <- subset(Ant, Ant$ambienttemp == "15")
 A15 <- gdata::drop.levels(A15)
@@ -50,14 +90,22 @@ A15$time <-A15$timestart
 A15$stdunit <- "Days"
 A15$stdvalue <- A15$originaltraitvalue
 A15$stdname  <- paste(unique(A15$ambienttemp),"celcius")
-
+A15$logvalue <- log(A15$stdvalue)
+  
 p15 <- ggplot(A15, aes(x = time, y = stdvalue))
 A1 <- p15 + geom_point() + geom_smooth()+
      labs(title=expression(paste('Anthonomus grandis 15 (',~degree,'C)',sep='')), 
      x = "Time (days)", 
      y = "Fecundity (Eggs/female/day)")
 
-A15.lm <- lm(stdvalue ~ time, data = A15)
+A15.lm <- lm(log(stdvalue) ~ time, data = A15)
+
+test <- ggplot(A15, aes(x = time, y = logvalue))
+test <- test + geom_point() + geom_smooth()+
+  labs(title=expression(paste('Anthonomus grandis 15 (',~degree,'C)',sep='')), 
+       x = "Time (days)", 
+       y = "Log of Fecundity (Eggs/female/day)")
+
 A15_k <- coef(A15.lm)[2]
 
 # A20 

@@ -9,11 +9,11 @@
 rm(list = ls())
 graphics.off()
 
-library("dplyr")
-library("ggplot2")
-library("gridExtra")
-library("ggforce")
-library("pdftools")
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(ggforce)
+library(pdftools)
 data <- read.csv("../data/simple.csv")
 
 z <-  subset(data, data$Variable == "Adult Mortality Rate (z)")
