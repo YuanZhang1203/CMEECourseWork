@@ -827,7 +827,7 @@ zj10 <- gdata::drop.levels(zj10)
 
 f_zj10 <- ggplot(z10, aes(x=temp, y = traitvalue)) + theme_bw()+
   geom_point(show.legend = FALSE,color = 'black',size = 3) +
-  labs(title = "TPC of Juvenile Mortality Rate (z)", 
+  labs(title = "TPC of Juvenile Mortality Rate (zJ)", 
        x = "Temperature (\u00B0C) ", 
        y = "Juvenile Mortality Rate (1/day)")+
   geom_smooth(method = "lm", formula = y ~ poly(x,2),color='blue',size = 1,se = T)+  ## quadratic fit

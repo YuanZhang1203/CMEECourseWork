@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{2}% 
+\contentsline {paragraph}{}{2}% 
+\contentsline {paragraph}{}{2}% 
+\contentsline {section}{\numberline {2}Proposed Methods}{3}% 
+\contentsline {subsection}{\numberline {2.1}Data and preparation}{3}% 
+\contentsline {subsection}{\numberline {2.2} Analysis}{3}% 
+\contentsline {subsubsection}{\numberline {2.2.1} Environmental impact}{3}% 
+\contentsline {subsubsection}{\numberline {2.2.2} Fitting model and Modified model}{3}% 
+\contentsline {section}{\numberline {3}Anticipated outputs and outcomes}{3}% 
+\contentsline {section}{\numberline {4}Project feasibility supported by a timeline of tasks}{3}% 
+\contentsline {section}{\numberline {5}The itemized budget}{4}% 
